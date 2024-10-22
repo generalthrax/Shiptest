@@ -79,7 +79,7 @@
 
 /datum/supply_pack/sec_supply/machete
 	name = "Stampted Steel Machete Crate"
-	desc = "Contains five mass produced machetes. A perfect choice for crews on a budget."
+	desc = "Contains two mass produced machetes. A perfect choice for crews on a budget."
 	cost = 500
 	contains = list(/obj/item/melee/sword/mass,
 					/obj/item/melee/sword/mass)
