@@ -633,6 +633,10 @@
 	tastes = list("beans" = 1)
 	foodtype = VEGETABLES
 
+/obj/item/reagent_containers/food/snacks/canned/beans/Initialize()
+	. = ..()
+	AddElement(/datum/element/dunkable, 5)
+
 /obj/item/reagent_containers/food/snacks/canned/peaches
 	name = "canned peaches"
 	desc = "A can of ripe peaches, suspended in syrup."
