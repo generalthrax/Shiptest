@@ -2133,7 +2133,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/hcider,
 /obj/item/reagent_containers/food/drinks/bottle/hcider,
 /obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato/sweet,
+/obj/item/reagent_containers/food/snacks/grown/sweet_potato,
 /obj/item/reagent_containers/food/snacks/grown/corn,
 /obj/item/storage/fancy/egg_box,
 /turf/open/floor/plasteel/showroomfloor,
