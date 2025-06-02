@@ -149,6 +149,17 @@
 	result = /obj/item/stack/medical/splint/ghetto
 	category = CAT_MISC
 
+
+/datum/crafting_recipe/replacement_structure
+	name = "Structure Repair Kit"
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER) //hole punching and scissors
+	reqs = list(
+			/obj/item/stack/rods = 3,
+			/obj/item/stack/sheet/mineral/titanium = 1,
+			/obj/item/stack/cable_coil = 2)
+	result = /obj/item/stack/medical/structure
+	category = CAT_MISC
+
 /datum/crafting_recipe/portableseedextractor
 	name = "Portable seed extractor"
 	reqs = list(
@@ -211,7 +222,7 @@
 /datum/crafting_recipe/mushroom_bowl
 	name = "Mushroom Bowl"
 	result = /obj/item/reagent_containers/glass/bowl/mushroom_bowl
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/ash_flora/shavings = 5)
+	reqs = list(/obj/item/food/grown/ash_flora/shavings = 5)
 	time = 30
 	category = CAT_MISC
 
@@ -223,4 +234,14 @@
 				/obj/item/stack/sheet/plasteel = 5)
 	tools = list(TOOL_WELDER)
 	time = 50
+	category = CAT_MISC
+
+/datum/crafting_recipe/coffee_cartridge
+	name = "Bootleg Coffee Cartridge"
+	result = /obj/item/coffee_cartridge/bootleg
+	time = 2 SECONDS
+	reqs = list(
+		/obj/item/blank_coffee_cartridge = 1,
+		/datum/reagent/toxin/coffeepowder = 10,
+	)
 	category = CAT_MISC

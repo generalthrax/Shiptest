@@ -7,8 +7,7 @@
 	desc = "A button-up in a tasteful beige with black pants, used as the basic uniform of the New Gorlex Republic."
 	icon_state = "ngr"
 	item_state = "ngr"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
-	can_adjust = FALSE
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
 	icon = 'icons/obj/clothing/faction/ngr/uniforms.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/uniforms.dmi'
 	supports_variations = DIGITIGRADE_VARIATION
@@ -95,6 +94,7 @@
 	icon = 'icons/obj/clothing/faction/ngr/suits.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/suits.dmi'
 	blood_overlay_type = "armor"
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50) // 5. additional. bullet armor.
 
 /obj/item/clothing/suit/armor/ngr/lieutenant
 	name = "\improper 2nd Battlegroup overcoat"
@@ -140,6 +140,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/ngr
 	jetpack = null
 	greyscale_colors = list("#33353a", "#d9ad82", "#8c1a34")
+	supports_variations = DIGITIGRADE_VARIATION | KEPORI_VARIATION
 
 /obj/item/clothing/head/helmet/space/plasmaman/ngr
 	name = "NGR phorid envirosuit helmet"
@@ -196,6 +197,7 @@
 	armor = list("melee" = 40, "bullet" = 60, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50) // The guys who specialize in ballistics would probably have better bullet armor. Maybe.
 	icon_state = "ngr_x11"
 	item_state = "ngr_x11"
+	can_flashlight = TRUE
 
 /obj/item/clothing/head/helmet/ngr/swat
 	name = "\improper NGR pilot helmet"
@@ -203,6 +205,7 @@
 	flash_protect = FLASH_PROTECTION_WELDER
 	icon_state = "ngr_pilot"
 	item_state = "ngr_pilot"
+	can_flashlight = TRUE
 
 ////////////
 //Glasses//
@@ -236,7 +239,7 @@
 	item_state = "ngr_facemask"
 	icon = 'icons/obj/clothing/faction/ngr/mask.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/mask.dmi'
-	supports_variations = SNOUTED_VARIATION | SNOUTED_SMALL_VARIATION
+	supports_variations = SNOUTED_VARIATION | SNOUTED_SMALL_VARIATION | KEPORI_VARIATION
 
 //////////
 //Neck//
@@ -261,6 +264,7 @@
 	item_state = "ngr_webbing"
 	icon = 'icons/obj/clothing/faction/ngr/belt.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/belt.dmi'
+	supports_variations = KEPORI_VARIATION
 
 /obj/item/storage/belt/security/webbing/ngr/cobra/PopulateContents()
 	. = ..()
@@ -272,3 +276,11 @@
 		new /obj/item/ammo_box/magazine/m556_42_hydra(src)
 	new /obj/item/ammo_casing/a40mm(src)
 	new /obj/item/ammo_casing/a40mm(src)
+
+/obj/item/storage/belt/mining/ngr
+	name = "NGR industrial webbing"
+	desc = "A set of industrial webbing used primarily by salvagers of the New Gorlex Republic, capable of holding mining equipment."
+	icon_state = "ngr_webbing_tan"
+	item_state = "ngr_webbing_tan"
+	icon = 'icons/obj/clothing/faction/ngr/belt.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/ngr/belt.dmi'
