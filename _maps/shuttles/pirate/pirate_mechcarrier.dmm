@@ -338,18 +338,15 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "df" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 9
+/obj/machinery/light/directional/west,
+/obj/machinery/washing_machine{
+	pixel_x = -8;
+	pixel_y = 15;
+	density = 0;
+	should_we_be_dense = 0
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/structure/grille,
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "cargopirate_windows";
-	name = "Blast Shutters"
-	},
-/turf/open/floor/plating,
-/area/ship/cargo)
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/crew/dorm)
 "dn" = (
 /obj/machinery/light/small/directional/east,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
@@ -397,8 +394,11 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo)
 "dF" = (
-/obj/effect/turf_decal/borderfloorblack,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/structure/table/reinforced,
+/obj/item/clothing/gloves/color/latex/nitrile/evil,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "dI" = (
@@ -1003,14 +1003,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
-"jv" = (
-/obj/docking_port/stationary{
-	dwidth = 15;
-	height = 15;
-	width = 30
-	},
-/turf/template_noop,
-/area/template_noop)
 "jM" = (
 /obj/structure/table/wood/reinforced,
 /obj/item/modular_computer/laptop/preset/civilian{
@@ -1199,11 +1191,15 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/security/armory)
 "mB" = (
-/obj/effect/turf_decal/borderfloorblack{
+/obj/structure/sink/kitchen{
 	dir = 1
 	},
-/turf/open/floor/plasteel/mono/white,
-/area/ship/medical)
+/obj/structure/mirror{
+	pixel_x = 0;
+	pixel_y = -26
+	},
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/crew/dorm)
 "mP" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8;
@@ -1235,6 +1231,19 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hangar/starboard)
+"mX" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "cargopirate_windows";
+	name = "Blast Shutters"
+	},
+/turf/open/floor/plating,
+/area/ship/cargo)
 "nh" = (
 /obj/effect/turf_decal/siding/thinplating/dark/corner{
 	dir = 8
@@ -2383,15 +2392,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hangar/starboard)
 "AB" = (
-/obj/structure/sink/kitchen{
+/obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/structure/mirror{
-	pixel_x = 0;
-	pixel_y = -26
-	},
-/turf/open/floor/plasteel/patterned/brushed,
-/area/ship/crew/dorm)
+/turf/open/floor/plasteel/mono/white,
+/area/ship/medical)
 "AM" = (
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 4
@@ -2423,6 +2428,11 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/vomit/old,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = -12
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm)
 "BG" = (
@@ -2633,13 +2643,13 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "DH" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 5
+/obj/docking_port/stationary{
+	dwidth = 15;
+	height = 15;
+	width = 30
 	},
-/obj/structure/table/reinforced,
-/obj/item/clothing/gloves/color/latex/nitrile/evil,
-/turf/open/floor/plasteel/mono/white,
-/area/ship/medical)
+/turf/template_noop,
+/area/template_noop)
 "DL" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -2733,15 +2743,10 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo)
 "EV" = (
-/obj/machinery/light/directional/west,
-/obj/machinery/washing_machine{
-	pixel_x = -8;
-	pixel_y = 15;
-	density = 0;
-	should_we_be_dense = 0
-	},
-/turf/open/floor/plasteel/patterned/brushed,
-/area/ship/crew/dorm)
+/obj/effect/turf_decal/borderfloorblack,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/mono/white,
+/area/ship/medical)
 "EW" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -3644,6 +3649,10 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "Qw" = (
+/obj/machinery/light_switch{
+	pixel_x = 12;
+	pixel_y = 21
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/dorm)
 "QC" = (
@@ -4715,7 +4724,7 @@ If
 If
 "}
 (14,1,1) = {"
-jv
+DH
 Xm
 IF
 GO
@@ -4741,7 +4750,7 @@ FG
 XV
 dn
 DM
-df
+mX
 Pi
 CF
 zn
@@ -5087,9 +5096,9 @@ vH
 RN
 ga
 qT
-mB
+AB
 aQ
-dF
+EV
 oP
 XG
 XG
@@ -5107,7 +5116,7 @@ Vm
 oP
 qD
 Jh
-DH
+dF
 rT
 hI
 oP
@@ -5148,7 +5157,7 @@ ty
 mm
 gB
 oy
-EV
+df
 jd
 oy
 XG
@@ -5169,7 +5178,7 @@ GV
 rX
 oy
 Gw
-AB
+mB
 oy
 XG
 XG
