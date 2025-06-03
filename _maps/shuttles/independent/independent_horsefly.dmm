@@ -2111,12 +2111,6 @@
 	name = "refrigerator";
 	populate = 0
 	},
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/flour,
@@ -2132,10 +2126,16 @@
 /obj/item/reagent_containers/food/drinks/bottle/rum,
 /obj/item/reagent_containers/food/drinks/bottle/hcider,
 /obj/item/reagent_containers/food/drinks/bottle/hcider,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/sweet_potato,
-/obj/item/reagent_containers/food/snacks/grown/corn,
 /obj/item/storage/fancy/egg_box,
+/obj/item/food/grown/cabbage,
+/obj/item/food/grown/cabbage,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/sweet_potato,
+/obj/item/food/grown/corn,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/canteen)
 "UR" = (
