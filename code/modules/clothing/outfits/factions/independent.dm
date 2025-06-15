@@ -383,8 +383,7 @@
 	jobtype = /datum/job/engineer
 
 	belt = /obj/item/storage/belt/utility/full/engi
-	gloves = /obj/item/clothing/gloves/color/yellow
-	ears = /obj/item/radio/headset/headset_eng
+	gloves = /obj/item/clothing/g
 	uniform = /obj/item/clothing/under/rank/engineering/engineer
 	alt_uniform = /obj/item/clothing/under/rank/engineering/engineer/hazard
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
