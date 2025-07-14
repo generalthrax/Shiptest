@@ -611,6 +611,8 @@
 /obj/item/storage/toolbox/ammo/c9mm,
 /obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/stock_parts/cell/gun,
+/obj/item/gun_maint_kit,
+/obj/item/gun_maint_kit,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "rg" = (
@@ -900,6 +902,7 @@
 	pixel_y = 21;
 	id = "lesbiaux_engineport"
 	},
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "vu" = (
@@ -1095,6 +1098,7 @@
 /obj/effect/turf_decal/corner/opaque/black{
 	dir = 8
 	},
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "zN" = (
@@ -1869,7 +1873,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/port)
 "Ps" = (
-/obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/box/white/corners{
 	dir = 8
@@ -1880,6 +1883,8 @@
 	},
 /obj/item/tank/jetpack/oxygen/harness,
 /obj/machinery/firealarm/directional/west,
+/obj/item/clothing/suit/space/syndicate/ramzi,
+/obj/item/clothing/head/helmet/space/syndicate/ramzi,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Pu" = (
@@ -2030,7 +2035,6 @@
 /turf/open/floor/wood/walnut,
 /area/ship/engineering/engines/starboard)
 "Sd" = (
-/obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/box/white/corners,
 /obj/machinery/suit_storage_unit/inherit,
@@ -2039,6 +2043,8 @@
 	},
 /obj/machinery/light/directional/north,
 /obj/item/tank/jetpack/oxygen/harness,
+/obj/item/clothing/suit/space/syndicate/ramzi,
+/obj/item/clothing/head/helmet/space/syndicate/ramzi,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Su" = (
