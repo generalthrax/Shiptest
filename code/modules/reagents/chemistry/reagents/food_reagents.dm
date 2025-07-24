@@ -207,7 +207,6 @@
 	color = "#731008" // rgb: 115, 16, 8
 	taste_description = "ketchup"
 
-
 /datum/reagent/consumable/capsaicin
 	name = "Capsaicin Oil"
 	description = "This is what makes chilis hot."
@@ -286,7 +285,7 @@
 			addtimer(CALLBACK(victim, TYPE_PROC_REF(/mob, remove_movespeed_modifier), /datum/movespeed_modifier/reagent/pepperspray), 10 SECONDS)
 		victim.update_damage_hud()
 	if(method == INGEST)
-		if(!holder.has_reagent(/datum/reagent/consumable/milk))
+		if(!M.has_reagent(/datum/reagent/consumable/milk))
 			if(prob(15))
 				to_chat(M, span_danger("[pick("Your head pounds.", "Your mouth feels like it's on fire.", "You feel dizzy.")]"))
 			if(prob(10))
@@ -297,7 +296,7 @@
 				victim.vomit()
 
 /datum/reagent/consumable/condensedcapsaicin/on_mob_life(mob/living/carbon/M)
-	if(!holder.has_reagent(/datum/reagent/consumable/milk))
+	if(!M.has_reagent(/datum/reagent/consumable/milk))
 		if(prob(10))
 			M.visible_message(span_warning("[M] [pick("dry heaves!","coughs!","splutters!")]"))
 	..()
@@ -518,7 +517,7 @@
 	taste_description = "sweetness"
 
 /datum/reagent/consumable/honey/on_mob_life(mob/living/carbon/M)
-	M.reagents.add_reagent(/datum/reagent/consumable/sugar,3)
+	holder.add_reagent(/datum/reagent/consumable/sugar,3)
 	if(prob(55))
 		M.adjustBruteLoss(-1*REM, 0)
 		M.adjustFireLoss(-1*REM, 0)
@@ -663,13 +662,6 @@
 		. = TRUE
 	..()
 
-/datum/reagent/consumable/clownstears
-	name = "Clown's Tears"
-	description = "The sorrow and melancholy of a thousand bereaved clowns, forever denied their Honkmechs."
-	nutriment_factor = 5 * REAGENTS_METABOLISM
-	color = "#eef442" // rgb: 238, 244, 66
-	taste_description = "mournful honking"
-
 /datum/reagent/consumable/liquidelectricity
 	name = "Liquid Electricity"
 	description = "A glowing, viscous substance that radiates pure energy." //this is no longer Elzousa blood
@@ -813,3 +805,18 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	taste_description = "peanut"
 	reagent_state = SOLID
+
+/datum/reagent/consumable/tiris_blood
+	name = "Tiris blood"
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	taste_description = "bloody and earthy"
+
+/datum/reagent/consumable/tiris_sele
+	name = "Tiris-Sele"
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	taste_description = "gently blossoming umami"
+
+/datum/reagent/consumable/tiris_sale
+	name = "Tiris-Sale"
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	taste_description = "bloody piercing umami"
