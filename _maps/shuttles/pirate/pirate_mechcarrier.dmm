@@ -33,15 +33,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
-/obj/item/clothing/suit/armor/vest/capcarapace/syndicate,
 /obj/item/clothing/shoes/combat,
 /obj/item/storage/box/ammo/a357_hp,
-/obj/item/gun/ballistic/revolver/viper,
-/obj/item/ammo_box/a357/hp,
-/obj/item/ammo_box/a357/hp,
 /obj/effect/turf_decal/siding/thinplating/dark,
-/obj/item/clothing/head/HoS/syndicate,
-/obj/item/clothing/head/HoS/beret/syndicate,
+/obj/item/storage/guncase/pistol/viper,
+/obj/item/clothing/head/ramzi/beret,
+/obj/item/clothing/head/ramzi,
+/obj/item/clothing/head/ramzi/peaked,
+/obj/item/clothing/suit/armor/ramzi/captain,
+/obj/item/clothing/suit/armor/ramzi/officer,
+/obj/item/clothing/under/syndicate/ramzi/officer,
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "aQ" = (
@@ -398,7 +399,7 @@
 	dir = 5
 	},
 /obj/structure/table/reinforced,
-/obj/item/clothing/gloves/color/latex/nitrile/evil,
+/obj/item/storage/case/surgery,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "dI" = (
@@ -755,10 +756,6 @@
 /area/ship/hangar/starboard)
 "hr" = (
 /obj/structure/rack,
-/obj/item/clothing/shoes/magboots{
-	pixel_y = -3;
-	pixel_x = -2
-	},
 /obj/item/storage/belt/utility/full/engi{
 	pixel_x = -1;
 	pixel_y = 2
@@ -774,6 +771,7 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
 	},
+/obj/item/clothing/shoes/magboots/syndie,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hangar/starboard)
 "hu" = (
@@ -885,17 +883,22 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/obj/item/clothing/suit/jacket/leather/duster,
-/obj/item/clothing/suit/jacket/miljacket,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/under/rank/security/officer/military/eng,
 /obj/item/clothing/mask/bandana/skull,
 /obj/item/clothing/head/beret/black,
-/obj/item/clothing/head/helmet/space/pilot/random,
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
 	},
-/obj/item/clothing/under/syndicate/gorlex,
+/obj/item/clothing/under/syndicate/ramzi/overalls,
+/obj/item/clothing/under/syndicate/ramzi,
+/obj/item/clothing/head/ramzi/flap,
+/obj/item/clothing/suit/ramzi,
+/obj/item/clothing/suit/armor/ramzi,
+/obj/item/storage/belt/security/webbing/ramzi/alt,
+/obj/item/storage/belt/security/webbing/ramzi,
+/obj/item/storage/guncase/pistol/rattlesnake,
+/obj/item/storage/box/ammo/c9mm_ap,
+/obj/item/storage/box/ammo/c9mm_ap,
+/obj/item/clothing/shoes/combat,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hangar/starboard)
 "is" = (
@@ -1175,8 +1178,11 @@
 /obj/item/clothing/glasses/meson/engine/tray,
 /obj/item/storage/belt/utility/atmostech,
 /obj/item/storage/toolbox/syndicate,
-/obj/item/clothing/suit/hazardvest,
-/obj/item/clothing/head/hardhat/white,
+/obj/item/clothing/head/hardhat/ramzi,
+/obj/item/clothing/suit/ramzi,
+/obj/item/clothing/under/syndicate/ramzi,
+/obj/item/clothing/under/syndicate/ramzi/overalls,
+/obj/item/clothing/shoes/workboots,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "mf" = (
@@ -1521,8 +1527,7 @@
 /obj/item/storage/firstaid/medical,
 /obj/item/stack/medical/gauze/twelve,
 /obj/item/stack/medical/gauze/twelve,
-/obj/item/stack/medical/splint/ghetto,
-/obj/item/stack/medical/splint/ghetto,
+/obj/item/storage/firstaid/brute,
 /turf/open/floor/plasteel,
 /area/ship/medical)
 "qE" = (
@@ -1787,11 +1792,11 @@
 "ti" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/rack,
-/obj/item/storage/box/ammo/a12g_buckshot{
-	pixel_x = 4;
-	pixel_y = 6
+/obj/item/storage/toolbox/ammo/shotgun{
+	pixel_x = -4;
+	pixel_y = 8
 	},
-/obj/item/storage/box/ammo/a12g_buckshot,
+/obj/item/storage/toolbox/ammo/c9mm,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "to" = (
@@ -1836,17 +1841,12 @@
 "tW" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/rack,
-/obj/item/storage/box/ammo/c57x39,
-/obj/item/storage/box/ammo/c57x39,
-/obj/item/storage/box/ammo/c57x39,
-/obj/item/storage/box/ammo/c57x39,
-/obj/item/storage/box/ammo/c57x39{
-	pixel_x = -4
-	},
-/obj/item/storage/box/ammo/c57x39{
-	pixel_x = 4
-	},
 /obj/machinery/airalarm/directional/north,
+/obj/item/storage/toolbox/ammo/c57,
+/obj/item/storage/toolbox/ammo/c57{
+	pixel_x = -3;
+	pixel_y = 8
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "ub" = (
@@ -2319,9 +2319,9 @@
 	},
 /obj/machinery/airalarm/directional/south,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/syndicate/black/engie,
-/obj/item/clothing/head/helmet/space/syndicate/black/engie,
-/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/suit/space/syndicate/ramzi,
+/obj/item/clothing/head/helmet/space/syndicate/ramzi,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "zL" = (
@@ -2916,22 +2916,87 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/obj/item/clothing/under/syndicate/gorlex,
-/obj/item/clothing/under/syndicate/gorlex,
-/obj/item/clothing/under/syndicate/gorlex,
-/obj/item/clothing/under/syndicate/gorlex,
-/obj/item/clothing/under/syndicate/gorlex,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
 /obj/machinery/light/directional/east,
+/obj/item/clothing/under/syndicate/ramzi/overalls{
+	pixel_x = -4;
+	pixel_y = 7
+	},
+/obj/item/clothing/under/syndicate/ramzi/overalls{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/clothing/under/syndicate/ramzi/overalls{
+	pixel_x = -11;
+	pixel_y = 7
+	},
+/obj/item/clothing/under/syndicate/ramzi/overalls{
+	pixel_x = -11;
+	pixel_y = 4
+	},
+/obj/item/clothing/under/syndicate/ramzi{
+	pixel_x = -4;
+	pixel_y = 1
+	},
+/obj/item/clothing/under/syndicate/ramzi{
+	pixel_x = -10;
+	pixel_y = 1
+	},
+/obj/item/clothing/under/syndicate/ramzi{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/obj/item/clothing/under/syndicate/ramzi{
+	pixel_x = -10;
+	pixel_y = -1
+	},
+/obj/item/clothing/head/ramzi/flap{
+	pixel_x = 4;
+	pixel_y = -5
+	},
+/obj/item/clothing/head/ramzi/flap{
+	pixel_x = 8;
+	pixel_y = -3
+	},
+/obj/item/clothing/head/ramzi{
+	pixel_x = 9;
+	pixel_y = -1
+	},
+/obj/item/clothing/head/ramzi{
+	pixel_x = 14;
+	pixel_y = -1
+	},
+/obj/item/clothing/neck/shemagh/ramzi{
+	pixel_x = 4;
+	pixel_y = -4
+	},
+/obj/item/clothing/neck/shemagh/ramzi{
+	pixel_x = 13;
+	pixel_y = -5
+	},
+/obj/item/clothing/neck/shemagh/ramzi{
+	pixel_x = 12;
+	pixel_y = -9
+	},
+/obj/item/clothing/neck/shemagh/ramzi{
+	pixel_x = 5;
+	pixel_y = -9
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = -2;
+	pixel_y = -7
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = -3;
+	pixel_y = -9
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = -10;
+	pixel_y = -7
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = -11;
+	pixel_y = -9
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "Hw" = (
@@ -2997,6 +3062,18 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
+"In" = (
+/obj/structure/closet/secure_closet/freezer/kitchen/wall/directional/west,
+/obj/item/clothing/under/syndicate/ramzi,
+/obj/item/clothing/under/syndicate/ramzi/overalls,
+/obj/item/clothing/suit/ramzi/smock,
+/obj/item/clothing/head/ramzi/surgical,
+/obj/item/storage/belt/medical/webbing/frontiersmen,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/gloves/color/latex/nitrile/evil,
+/turf/open/floor/plasteel/mono/white,
+/area/ship/medical)
 "Iq" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 4
@@ -3290,9 +3367,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/item/tank/jetpack/oxygen/harness,
 /obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Lw" = (
@@ -3351,8 +3428,6 @@
 	name = "armor locker";
 	req_access_txt = "1"
 	},
-/obj/item/storage/belt/military,
-/obj/item/storage/belt/military,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/machinery/light_switch{
@@ -3360,14 +3435,18 @@
 	pixel_x = 21;
 	pixel_y = -8
 	},
-/obj/item/storage/belt/military/assault,
-/obj/item/storage/belt/military,
-/obj/item/clothing/head/helmet/bulletproof/x11,
-/obj/item/clothing/head/helmet/bulletproof/x11,
-/obj/item/clothing/head/helmet/bulletproof/x11,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/suit/armor/vest,
+/obj/item/clothing/head/helmet/ramzi/bulletproof,
+/obj/item/clothing/head/helmet/ramzi/bulletproof,
+/obj/item/clothing/head/helmet/ramzi/bulletproof,
+/obj/item/clothing/suit/armor/ramzi/bulletproof,
+/obj/item/clothing/suit/armor/ramzi/bulletproof,
+/obj/item/clothing/suit/armor/ramzi/bulletproof,
+/obj/item/storage/belt/security/webbing/ramzi,
+/obj/item/storage/belt/security/webbing/ramzi,
+/obj/item/storage/belt/security/webbing/ramzi,
+/obj/item/storage/belt/security/webbing/ramzi/alt,
+/obj/item/storage/belt/security/webbing/ramzi/alt,
+/obj/item/storage/belt/security/webbing/ramzi/alt,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "Nn" = (
@@ -3481,12 +3560,15 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Oy" = (
-/obj/machinery/suit_storage_unit/independent/pilot,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/head/helmet/space/syndicate/ramzi,
+/obj/item/clothing/suit/space/syndicate/ramzi,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hangar/starboard)
 "OD" = (
@@ -3612,12 +3694,12 @@
 /area/ship/hangar/starboard)
 "PP" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/item/reagent_containers/food/drinks/bottle/goldschlager,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
+/obj/item/clothing/suit/space/hardsuit/syndi/ramzi/elite,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/bridge)
 "PW" = (
@@ -3681,9 +3763,9 @@
 "QH" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/jetpack/oxygen/harness,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "QL" = (
@@ -3752,9 +3834,9 @@
 /obj/machinery/light/small/directional/west,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/jetpack/oxygen/harness,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "Rf" = (
@@ -4251,12 +4333,12 @@
 /obj/structure/closet/crate{
 	name = "spare softsuits"
 	},
-/obj/item/clothing/suit/space/syndicate/surplus,
-/obj/item/clothing/suit/space/syndicate/surplus,
-/obj/item/clothing/suit/space/syndicate/surplus,
-/obj/item/clothing/head/helmet/space/syndicate/surplus,
-/obj/item/clothing/head/helmet/space/syndicate/surplus,
-/obj/item/clothing/head/helmet/space/syndicate/surplus,
+/obj/item/clothing/suit/space/syndicate/ramzi/surplus,
+/obj/item/clothing/suit/space/syndicate/ramzi/surplus,
+/obj/item/clothing/suit/space/syndicate/ramzi/surplus,
+/obj/item/clothing/head/helmet/space/syndicate/ramzi/surplus,
+/obj/item/clothing/head/helmet/space/syndicate/ramzi/surplus,
+/obj/item/clothing/head/helmet/space/syndicate/ramzi/surplus,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Xx" = (
@@ -5077,7 +5159,7 @@ oP
 QP
 PE
 ov
-aQ
+In
 Fw
 oP
 XG
