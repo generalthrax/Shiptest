@@ -132,10 +132,6 @@
 	prefixes = PREFIX_PGF
 	color = "#359829"
 
-/datum/faction/ramzi
-	name = FACTION_RAMZI
-	prefixes = list("SV", "ISV")
-
 /datum/faction/independent
 	name = FACTION_INDEPENDENT
 	short_name = "IND"
