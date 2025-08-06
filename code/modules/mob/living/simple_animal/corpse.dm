@@ -75,6 +75,16 @@
 	mask = /obj/item/clothing/mask/gas/ramzi
 	back = /obj/item/tank/jetpack/oxygen/harness
 
+/obj/effect/mob_spawn/human/corpse/ramzi/heavy
+	name = "Ramzi Clique Heavy"
+	id_job = "Operative"
+	outfit = /datum/outfit/ramzi/heavy
+
+/datum/outfit/ramzi/heavy
+	name = "Ramzi Clique Heavy"
+	suit = /obj/item/clothing/suit/armor/ramzi/tactical
+	head = /obj/item/clothing/head/helmet/ramzi/reinforced
+
 /datum/outfit/syndicatecaptaincorpse
 	name = "Syndicate Captain Corpse"
 	uniform = /obj/item/clothing/under/syndicate/gorlex

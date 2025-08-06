@@ -288,7 +288,26 @@
 	icon_state = "syndicate_shotgun"
 	icon_living = "syndicate_shotgun"
 	casingtype = /obj/item/ammo_casing/a65clip
-	l_hand =/obj/item/gun/ballistic/automatic/marksman/boomslang
+	l_hand = /obj/item/gun/ballistic/automatic/marksman/boomslang
+
+/mob/living/simple_animal/hostile/human/ramzi/ranged/gunner
+	name = "Ramzi Clique Adjudicator"
+	desc = "WIP"
+	vision_range = 20
+	aggro_vision_range = 20
+	rapid = 10
+	rapid_fire_delay = 1
+	casingtype = /obj/item/ammo_casing/a556_42
+	l_hand = /obj/item/gun/ballistic/automatic/assault/hydra/lmg
+	mob_spawner = /obj/effect/mob_spawn/human/corpse/ramzi/heavy
+	armor_base = /obj/item/clothing/suit/armor/ramzi/tactical
+	spread = 20
+	wander = FALSE
+	ranged_cooldown_time = 50
+	projectilesound = 'sound/weapons/gun/rifle/hydra.ogg'
+
+/mob/living/simple_animal/hostile/human/ramzi/ranged/gunner/Goto(target, delay, minimum_distance)
+	return FALSE
 
 /* Space Ranged */
 

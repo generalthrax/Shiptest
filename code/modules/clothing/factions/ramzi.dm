@@ -84,6 +84,15 @@
 	blood_overlay_type = "coat"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
 
+/obj/item/clothing/suit/armor/ramzi/tactical
+	name = "\improper Ramzi medium tactical armor vest"
+	desc = "A heavier armor vest covering arms and legs, worn by the Ramzi Clique."
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	icon_state = "ramzi_medium"
+	item_state = "ramzi_medium"
+	blood_overlay_type = "coat"
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 30)
+
 ///////////////
 //Spacesuits//
 //////////////
@@ -202,6 +211,22 @@
 	item_state = "ramzi_x11"
 	can_flashlight = TRUE
 	content_overlays = TRUE
+
+/obj/item/clothing/head/helmet/ramzi/reinforced
+	name = "\improper Ramzi Clique reinforced helmet"
+	desc = "A reinforced Ramzi Clique X-11. The front plate has a small window to let the user see."
+	armor = list("melee" = 35, "bullet" = 55, "laser" = 45, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 20)
+	icon_state = "ramzi_reinforced"
+	item_state = "ramzi_reinforced"
+	clothing_flags = SNUG_FIT | BLOCK_GAS_SMOKE_EFFECT
+
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF | SEALS_EYES
+	can_flashlight = TRUE
+	actions_types = list(/datum/action/item_action/toggle)
+
+/obj/item/clothing/head/helmet/ramzi/reinforced/attack_self(mob/user)
+	weldingvisortoggle(user)
 
 //////////
 //Masks//
