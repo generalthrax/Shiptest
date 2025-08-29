@@ -3827,8 +3827,8 @@
 /obj/effect/turf_decal/trimline/opaque/vired/filled/warning{
 	dir = 8
 	},
-/obj/item/gun/energy/disabler,
 /obj/item/gun/energy/e_gun/smg,
+/obj/item/gun/energy/e_gun/mini,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "uZ" = (
@@ -5318,7 +5318,9 @@
 /obj/effect/turf_decal/trimline/opaque/vired/line,
 /obj/item/storage/belt/security,
 /obj/item/melee/knife/survival,
-/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/stock_parts/cell/gun/sharplite/mini,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "CN" = (
