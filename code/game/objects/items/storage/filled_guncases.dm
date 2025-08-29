@@ -363,6 +363,14 @@
 	gun_type = /obj/item/gun/ballistic/automatic/marksman/f90/inteq
 	mag_type = /obj/item/ammo_box/magazine/f90
 
+/obj/item/storage/guncase/cadejo
+	gun_type = /obj/item/gun/energy/sharplite/x12/inteq
+	mag_type = /obj/item/stock_parts/cell/gun/sharplite
+
+/obj/item/storage/guncase/barghest
+	gun_type = /obj/item/gun/energy/e_gun/hades/inteq
+	mag_type = /obj/item/stock_parts/cell/gun/sharplite/plus
+
 /* idk */
 
 /obj/item/storage/guncase/pistol/disposable
