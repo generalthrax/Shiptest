@@ -310,7 +310,7 @@
 	name = "PP10 'Cadejo' Energy Carbine"
 	desc = "Contains one refitted Sharplite X12 carbine, for IRMG use. Uses sharplite cells."
 	cost = 1250
-	contains = list(/obj/supply_pack/gun/energy/cadejo)
+	contains = list(/obj/item/storage/guncase/cadejo)
 	crate_name = "beam carbine crate"
 	faction = /datum/faction/inteq
 	faction_discount = 0
