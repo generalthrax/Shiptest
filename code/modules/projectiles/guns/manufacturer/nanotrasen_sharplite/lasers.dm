@@ -205,6 +205,9 @@
 	spread = 2
 	spread_unwielded = 10
 
+/obj/item/gun/energy/sharplite/x12/empty_cell
+	spawn_no_ammo = TRUE
+
 /obj/item/gun/energy/sharplite/x12/inteq
 	name = "PP10 “Cadejo” Energy Carbine"
 	desc = "A Sharplite X12 VEC refinished in Inteq Risk Management Group colors. Like the base model, it fires lethal electroplasma or nonlethal disabler bolts. Typically issued to IRMG base guards and station security staff. The modifications appear to be largely cosmetic."

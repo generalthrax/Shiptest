@@ -5745,8 +5745,7 @@
 	dir = 8
 	},
 /obj/item/flashlight/seclite,
-/obj/item/storage/guncase/energy/egun,
-/obj/item/stock_parts/cell/gun/sharplite,
+/obj/item/storage/guncase/x01,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "Oc" = (

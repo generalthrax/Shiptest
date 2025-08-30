@@ -3864,6 +3864,8 @@
 /obj/item/storage/box/ids,
 /obj/machinery/light/small/directional/south,
 /obj/item/storage/box/PDAs,
+/obj/item/storage/guncase/rhino,
+/obj/item/storage/box/ammo/a357,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "vj" = (

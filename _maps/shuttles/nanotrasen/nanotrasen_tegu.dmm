@@ -4621,8 +4621,8 @@
 	pixel_x = 8;
 	pixel_y = -20
 	},
-/obj/item/stock_parts/cell/gun/sharplite,
-/obj/item/gun/energy/sharplite/l201/l204,
+/obj/item/storage/guncase/rhino,
+/obj/item/storage/box/ammo/a357,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/crewfour)
 "NW" = (

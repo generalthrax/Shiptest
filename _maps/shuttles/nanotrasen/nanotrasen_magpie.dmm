@@ -1215,6 +1215,8 @@
 	pixel_x = -4;
 	pixel_y = 7
 	},
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/guncase/rhino,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/dorm/captain)
 "tf" = (
