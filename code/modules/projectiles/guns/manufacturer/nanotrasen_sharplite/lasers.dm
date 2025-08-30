@@ -178,6 +178,8 @@
 	spread = 2
 	spread_unwielded = 10
 
+/obj/item/gun/energy/sharplite/l201/l204/empty_cell
+	spawn_no_ammo = TRUE
 
 /obj/item/gun/energy/e_gun/mini/empty_cell
 	spawn_no_ammo = TRUE
