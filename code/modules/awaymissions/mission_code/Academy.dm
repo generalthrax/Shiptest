@@ -83,6 +83,7 @@
 		icon_state = "forge_off"
 		STOP_PROCESSING(SSobj, src)
 
+<<<<<<< HEAD
 /obj/item/dice/d20/fate
 	name = "\improper Die of Fate"
 	desc = "A die with twenty sides. You can feel unearthly energies radiating from it. Using this might be VERY risky."
@@ -280,6 +281,8 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/color/white
 
+=======
+>>>>>>> c91b52567822247e1d4f28cea80a9f8bd3a7f4f2
 /obj/effect/proc_holder/spell/targeted/summonmob
 	name = "Summon Servant"
 	desc = "This spell can be used to call your servant, whenever you need it."
