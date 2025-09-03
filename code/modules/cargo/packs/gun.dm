@@ -820,6 +820,7 @@
 	faction = /datum/faction/nt
 	faction_discount = 0
 	faction_locked = TRUE
+
 /datum/supply_pack/gun/saluki
 	name = "SSG-08 Saluki Sniper Rifle Crate"
 	desc = "Contains a military sniper rifle equipped with an 8x sniper scope, fitted by the Inteq Artificer Division. Chambered in the powerful 6.5mm CLIP cartridge."
