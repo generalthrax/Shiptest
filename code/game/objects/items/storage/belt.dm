@@ -492,7 +492,7 @@
 /obj/item/storage/belt/military/cobra/PopulateContents()
 	. = ..()
 	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/m45_cobra(src)
+		new /obj/item/ammo_box/magazine/smgm10mm_cobra(src)
 
 /obj/item/storage/belt/military/hydra/PopulateContents()
 	. = ..()

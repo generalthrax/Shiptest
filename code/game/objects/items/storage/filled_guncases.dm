@@ -14,7 +14,7 @@
 
 /obj/item/storage/guncase/pistol/candor
 	gun_type = /obj/item/gun/ballistic/automatic/pistol/candor
-	mag_type = /obj/item/ammo_box/magazine/m45
+	mag_type = /obj/item/ammo_box/magazine/smgm10mm_cobra
 
 /obj/item/storage/guncase/pistol/detective
 	gun_type = /obj/item/gun/ballistic/revolver/detective
@@ -95,11 +95,11 @@
 
 /obj/item/storage/guncase/cobra
 	gun_type = /obj/item/gun/ballistic/automatic/smg/cobra/indie
-	mag_type = /obj/item/ammo_box/magazine/m45_cobra
+	mag_type = /obj/item/ammo_box/magazine/smgm10mm_cobra
 
 /obj/item/storage/guncase/c20r
 	gun_type = /obj/item/gun/ballistic/automatic/smg/cobra
-	mag_type = /obj/item/ammo_box/magazine/m45_cobra
+	mag_type = /obj/item/ammo_box/magazine/smgm10mm_cobra
 
 /obj/item/storage/guncase/boomslang
 	gun_type = /obj/item/gun/ballistic/automatic/marksman/boomslang/indie

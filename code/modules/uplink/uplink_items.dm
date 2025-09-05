@@ -744,7 +744,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/ammo/smg
 	name = ".45 SMG Magazine"
 	desc = "An additional 24-round .45 magazine suitable for use with the C-20r submachine gun."
-	item = /obj/item/ammo_box/magazine/m45_cobra
+	item = /obj/item/ammo_box/magazine/smgm10mm_cobra
 	cost = 3
 	include_modes = list(/datum/game_mode/nuclear)
 

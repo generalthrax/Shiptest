@@ -380,9 +380,9 @@ NO_MAG_GUN_HELPER(automatic/pistol/himehabu)
 	icon_state = "cobra"
 	item_state = "cobra"
 
-	default_ammo_type = /obj/item/ammo_box/magazine/m45_cobra
+	default_ammo_type = /obj/item/ammo_box/magazine/smgm10mm_cobra
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/m45_cobra,
+		/obj/item/ammo_box/magazine/smgm10mm_cobra,
 	)
 
 	fire_sound = 'sound/weapons/gun/smg/cobra.ogg'

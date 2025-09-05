@@ -574,7 +574,7 @@
 
 /obj/item/storage/backpack/duffelbag/syndie/ammo/smg/PopulateContents()
 	for(var/i in 1 to 9)
-		new /obj/item/ammo_box/magazine/m45_cobra(src)
+		new /obj/item/ammo_box/magazine/smgm10mm_cobra(src)
 
 /obj/item/storage/backpack/duffelbag/syndie/ammo/mech
 	desc = "A large duffel bag, packed to the brim with various exosuit ammo."
@@ -604,8 +604,8 @@
 	desc = "A large duffel bag containing a C-20r, some magazines, and a cheap looking suppressor."
 
 /obj/item/storage/backpack/duffelbag/syndie/c20rbundle/PopulateContents()
-	new /obj/item/ammo_box/magazine/m45_cobra(src)
-	new /obj/item/ammo_box/magazine/m45_cobra(src)
+	new /obj/item/ammo_box/magazine/smgm10mm_cobra(src)
+	new /obj/item/ammo_box/magazine/smgm10mm_cobra(src)
 	new /obj/item/gun/ballistic/automatic/smg/cobra(src)
 	new /obj/item/attachment/silencer(src)
 
