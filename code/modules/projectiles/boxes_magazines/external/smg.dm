@@ -68,20 +68,20 @@
 	desc = "A 24-round magazine for the SkM-44(k). These rubber rounds trade lethality for a heavy impact which can incapacitate targets. Performs even worse against armor."
 	ammo_type = /obj/item/ammo_casing/c10mm/rubber
 
-/obj/item/ammo_box/magazine/m45_cobra
-	name = "SMG magazine (.45)"
-	desc = "A 24-round magazine for .45 submachine guns. These rounds do moderate damage, but struggle against armor."
+/obj/item/ammo_box/magazine/smgm10mm_cobra
+	name = "SMG magazine (10x22mm)"
+	desc = "A 24-round magazine for 10x22mm submachine guns. These rounds do moderate damage, but struggle against armor."
 	icon_state = "c20r45-24"
 	base_icon_state = "c20r45"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	caliber = "10x22mm"
 	max_ammo = 24
 
-/obj/item/ammo_box/magazine/m45_cobra/update_icon_state() //This is stupid (whenever ammo is spent, it updates the icon path)
+/obj/item/ammo_box/magazine/smgm10mm_cobra/update_icon_state() //This is stupid (whenever ammo is spent, it updates the icon path)
 	. = ..()
 	icon_state = "c20r45-[round(ammo_count(),2)]"
 
-/obj/item/ammo_box/magazine/m45_cobra/empty
+/obj/item/ammo_box/magazine/smgm10mm_cobra/empty
 	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/c44_firestorm_mag

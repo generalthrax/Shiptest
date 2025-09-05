@@ -152,9 +152,9 @@
 	cost = 300
 	faction = /datum/faction/syndicate/scarborough
 
-/datum/supply_pack/magazine/c45_cobra_mag
+/datum/supply_pack/magazine/c10mm_cobra_mag
 	name = "Cobra Magazine Crate"
-	desc = "Contains a .45 magazine for the Cobra-20, with a capacity of 24 rounds."
+	desc = "Contains a 10x22mm magazine for the Cobra-20, with a capacity of 24 rounds."
 	cost = 300
 	contains = list(/obj/item/ammo_box/magazine/m45_cobra/empty)
 	faction = /datum/faction/syndicate/scarborough

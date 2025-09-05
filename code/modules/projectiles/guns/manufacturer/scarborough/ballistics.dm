@@ -435,25 +435,6 @@ NO_MAG_GUN_HELPER(automatic/smg/cobra)
 
 NO_MAG_GUN_HELPER(automatic/smg/cobra/indie)
 
-
-/obj/item/ammo_box/magazine/m45_cobra
-
-/obj/item/ammo_box/magazine/m45_cobra
-	name = "Cobra magazine (.45)"
-	desc = "A 24-round magazine for the Cobra submachine gun. These rounds do moderate damage, but struggle against armor."
-	icon_state = "cobra_mag-24"
-	base_icon_state = "cobra_mag"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
-	max_ammo = 24
-
-/obj/item/ammo_box/magazine/m45_cobra/update_icon_state()
-	. = ..()
-	icon_state = "[base_icon_state]-[round(ammo_count(),2)]"
-
-/obj/item/ammo_box/magazine/m45_cobra/empty
-	start_empty = TRUE
-
 /obj/item/gun/ballistic/automatic/smg/sidewinder
 	name = "CDW-81 \"Sidewinder\""
 	desc = "An armor-piercing, compact personal defense weapon, introduced late into the Inter-Corporate War as an improvement over the C-20r when fighting armored personnel. Issued only in small numbers, and used today by specialists of former Syndicate factions. Chambered in 5.7mm."

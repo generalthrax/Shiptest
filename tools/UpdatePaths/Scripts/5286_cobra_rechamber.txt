@@ -1,0 +1,1 @@
+/obj/item/ammo_box/magazine/m45_cobra/@SUBTYPES : /obj/item/ammo_box/magazine/smgm10mm_cobra
