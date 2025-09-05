@@ -7546,12 +7546,12 @@
 	pixel_y = -2;
 	pixel_x = 3
 	},
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "RG" = (

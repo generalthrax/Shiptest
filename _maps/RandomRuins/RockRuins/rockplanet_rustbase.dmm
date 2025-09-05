@@ -1133,8 +1133,8 @@
 	locked = 0;
 	req_access = null
 	},
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
 /turf/open/floor/plasteel/tech,
 /area/ruin/rockplanet/rust_base/armory)
 "lO" = (

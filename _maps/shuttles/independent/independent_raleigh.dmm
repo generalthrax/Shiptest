@@ -115,18 +115,9 @@
 /obj/item/stock_parts/cell/gun{
 	pixel_y = 8
 	},
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_x = -5;
-	pixel_y = -10
-	},
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_x = -5;
-	pixel_y = -5
-	},
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "aU" = (

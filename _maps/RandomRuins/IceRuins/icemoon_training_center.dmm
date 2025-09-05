@@ -9158,10 +9158,8 @@
 "SD" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/north,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_y = 6
-	},
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
 /turf/open/floor/plasteel/tech,
 /area/ruin/icemoon/training_facility/range)
 "SF" = (

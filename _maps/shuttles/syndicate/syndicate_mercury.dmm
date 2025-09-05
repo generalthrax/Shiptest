@@ -141,12 +141,12 @@
 	icon_state = "sec_wall";
 	name = "ammunition locker"
 	},
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
 /obj/item/storage/box/ammo/c45,
 /obj/item/storage/box/ammo/c45,
 /turf/open/floor/suns/dark/plain,

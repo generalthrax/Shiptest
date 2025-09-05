@@ -1608,8 +1608,8 @@
 "WG" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/item/gun/ballistic/automatic/smg/cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
 /turf/open/floor/plating/jungleplanet,
 /area/ruin/jungle/syndifort/jerry)
 "WT" = (

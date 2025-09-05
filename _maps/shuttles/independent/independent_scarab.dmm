@@ -4048,12 +4048,8 @@
 	pixel_y = 2
 	},
 /obj/machinery/airalarm/directional/north,
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/m45_cobra{
-	pixel_y = 4
-	},
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
+/obj/item/ammo_box/magazine/smgm10mm_cobra,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
 "Xd" = (
