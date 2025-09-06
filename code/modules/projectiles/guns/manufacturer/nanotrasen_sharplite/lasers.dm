@@ -140,7 +140,6 @@
 	icon_state = "l201"
 	item_state = "l201"
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK
 	custom_materials = list(/datum/material/iron=2000)
 	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/sharplite/dmr)
 	ammo_x_offset = 1
@@ -164,7 +163,6 @@
 	icon_state = "l204"
 	item_state = "l204"
 
-	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/sharplite)
 
 	zoomable = FALSE
@@ -188,7 +186,6 @@
 	icon_state = "x12"
 	item_state = "x12"
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BELT
 	custom_materials = list(/datum/material/iron=2000)
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/sharplite, /obj/item/ammo_casing/energy/laser/sharplite)
 	ammo_x_offset = 1
@@ -291,7 +288,6 @@
 
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK
 
 	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_FULLAUTO)
 	default_firemode = FIREMODE_SEMIAUTO
@@ -336,15 +332,12 @@
 
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK
 
 	gun_firemodes = list(FIREMODE_SEMIAUTO)
 	default_firemode = FIREMODE_SEMIAUTO
 
 	shaded_charge = TRUE
 	modifystate = FALSE
-
-	slot_flags = ITEM_SLOT_BACK
 
 	spread = -4
 	spread_unwielded = 40
