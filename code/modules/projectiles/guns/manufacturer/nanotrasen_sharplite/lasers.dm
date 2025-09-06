@@ -125,6 +125,7 @@
 	shaded_charge = TRUE
 	modifystate = FALSE
 	weapon_weight = WEAPON_LIGHT
+	w_class = WEIGHT_CLASS_BULKY
 
 	fire_delay = 0.13 SECONDS
 	wield_slowdown = LASER_SMG_SLOWDOWN
