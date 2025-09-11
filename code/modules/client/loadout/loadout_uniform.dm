@@ -16,68 +16,39 @@
 	path = /obj/item/clothing/under/utility/skirt
 	description = "Does it being a skirt defeat the purpose of use in a hazardous work environment?"
 
+// Cargo pants
+
+/datum/gear/uniform/cargo
+	display_name = "cargo pants, recolorable"
+	path = /obj/item/clothing/under/pants/cargo
+
 //Colored jumpsuits
 
 /datum/gear/uniform/color
-	subtype_path = /datum/gear/uniform/color
+	display_name = "jumpsuit, recolorable"
+	path = /obj/item/clothing/under/color
 
-/datum/gear/uniform/color/red
-	display_name = "jumpsuit, red"
-	path = /obj/item/clothing/under/color/red
-
-/datum/gear/uniform/color/green
-	display_name = "jumpsuit, green"
-	path = /obj/item/clothing/under/color/green
-
-/datum/gear/uniform/color/blue
-	display_name = "jumpsuit, blue"
-	path = /obj/item/clothing/under/color/blue
-
-/datum/gear/uniform/color/yellow
-	display_name = "jumpsuit, yellow"
-	path = /obj/item/clothing/under/color/yellow
-
-/datum/gear/uniform/color/pink
-	display_name = "jumpsuit, pink"
-	path = /obj/item/clothing/under/color/pink
-
-/datum/gear/uniform/color/black
-	display_name = "jumpsuit, black"
-	path = /obj/item/clothing/under/color/black
-
-/datum/gear/uniform/color/white
-	display_name = "jumpsuit, white"
-	path = /obj/item/clothing/under/color/white
-
-/datum/gear/uniform/color/random
-	display_name = "jumpsuit, random"
-	path = /obj/item/clothing/under/color/random //literally useless if grey assistants is off
+/datum/gear/uniform/color_skirt
+	display_name = "jumpskirt, recolorable"
+	path = /obj/item/clothing/under/color/jumpskirt
 
 //Shorts
 
-/datum/gear/uniform/athshortsred
-	display_name = "athletic shorts, red"
-	path = /obj/item/clothing/under/shorts/red
+/datum/gear/uniform/athshorts
+	display_name = "athletic shorts, recolorable"
+	path = /obj/item/clothing/under/shorts
 
-/datum/gear/uniform/athshortsblack
-	display_name = "athletic shorts, black"
-	path = /obj/item/clothing/under/shorts/black
+/datum/gear/uniform/dolphinshorts
+	display_name = "dolphin shorts"
+	path = /obj/item/clothing/under/shorts/dolphin
 
-/datum/gear/uniform/athshortsgrey
-	display_name = "athletic shorts, grey"
-	path = /obj/item/clothing/under/shorts/grey
+/datum/gear/uniform/jorts
+	display_name = "jorts"
+	path = /obj/item/clothing/under/shorts/jorts
 
-/datum/gear/uniform/athshortsblue
-	display_name = "athletic shorts, blue"
-	path = /obj/item/clothing/under/shorts/blue
-
-/datum/gear/uniform/athshortsgreen
-	display_name = "athletic shorts, green"
-	path = /obj/item/clothing/under/shorts/green
-
-/datum/gear/uniform/athshortspurple
-	display_name = "athletic shorts, purple"
-	path = /obj/item/clothing/under/shorts/purple
+/datum/gear/uniform/explorershorts
+	display_name = "explorer shorts"
+	path = /obj/item/clothing/under/shorts/explorer
 
 //Pants
 /datum/gear/uniform/pants
@@ -293,3 +264,21 @@
 /datum/gear/uniform/suit/dress_suit/skirt
 	display_name = "dress-suitskirt, navy"
 	path = /obj/item/clothing/under/suit/dresssuit/skirt
+
+// Overalls
+
+/datum/gear/uniform/overalls_denim
+	display_name = "overalls, denim"
+	path = /obj/item/clothing/under/overalls
+
+/datum/gear/uniform/overalls_black
+	display_name = "overalls, black"
+	path = /obj/item/clothing/under/overalls/black
+
+/datum/gear/uniform/overalls_olive
+	display_name = "overalls, olive"
+	path = /obj/item/clothing/under/overalls/olive
+
+/datum/gear/uniform/overalls_brown
+	display_name = "overalls, brown"
+	path = /obj/item/clothing/under/overalls/brown

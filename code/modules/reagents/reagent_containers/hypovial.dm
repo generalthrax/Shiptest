@@ -9,15 +9,17 @@
 	volume = 10
 	possible_transfer_amounts = list(1,2,5,10)
 	obj_flags = UNIQUE_RENAME
-	unique_reskin = list("hypovial" = "hypovial",
-						"red hypovial" = "hypovial-b",
-						"blue hypovial" = "hypovial-d",
-						"green hypovial" = "hypovial-a",
-						"orange hypovial" = "hypovial-k",
-						"purple hypovial" = "hypovial-p",
-						"black hypovial" = "hypovial-t",
-						"pink hypovial" = "hypovial-pink"
-						)
+	unique_reskin = list(
+		"hypovial" = "hypovial",
+		"red hypovial" = "hypovial-b",
+		"blue hypovial" = "hypovial-d",
+		"green hypovial" = "hypovial-a",
+		"orange hypovial" = "hypovial-k",
+		"purple hypovial" = "hypovial-p",
+		"black hypovial" = "hypovial-t",
+		"pink hypovial" = "hypovial-pink"
+	)
+	unique_reskin_changes_name = TRUE
 	can_have_cap = FALSE
 	cap_icon_state = null
 	cap_on = FALSE
@@ -78,14 +80,16 @@
 	icon_state = "hypoviallarge"
 	volume = 120
 	possible_transfer_amounts = list(5,10,15,20)
-	unique_reskin = list("large hypovial" = "hypoviallarge",
-						"large red hypovial" = "hypoviallarge-b",
-						"large blue hypovial" = "hypoviallarge-d",
-						"large green hypovial" = "hypoviallarge-a",
-						"large orange hypovial" = "hypoviallarge-k",
-						"large purple hypovial" = "hypoviallarge-p",
-						"large black hypovial" = "hypoviallarge-t"
-						)
+	unique_reskin = list(
+		"large hypovial" = "hypoviallarge",
+		"large red hypovial" = "hypoviallarge-b",
+		"large blue hypovial" = "hypoviallarge-d",
+		"large green hypovial" = "hypoviallarge-a",
+		"large orange hypovial" = "hypoviallarge-k",
+		"large purple hypovial" = "hypoviallarge-p",
+		"large black hypovial" = "hypoviallarge-t"
+	)
+	unique_reskin_changes_name = TRUE
 
 /obj/item/reagent_containers/glass/bottle/vial/large/update_appearance()
 	cut_overlays()
@@ -117,65 +121,103 @@
 	unique_reskin = null
 
 
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/bicaridine
-	name = "red hypovial (bicaridine)"
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/indomide
+	name = "red hypovial (indomide)"
 	icon_state = "hypovial-b"
-	comes_with = list(/datum/reagent/medicine/bicaridine = 60)
+	comes_with = list(/datum/reagent/medicine/indomide = 60)
 
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/antitoxin
-	name = "green hypovial (Dylovene)"
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/pancrazine
+	name = "green hypovial (pancrazine)"
 	icon_state = "hypovial-a"
-	comes_with = list(/datum/reagent/medicine/antitoxin = 60)
+	comes_with = list(/datum/reagent/medicine/pancrazine = 60)
 
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/kelotane
-	name = "orange hypovial (kelotane)"
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/alvitane
+	name = "orange hypovial (alvitane)"
 	icon_state = "hypovial-k"
-	comes_with = list(/datum/reagent/medicine/kelotane = 60)
+	comes_with = list(/datum/reagent/medicine/alvitane = 60)
 
 /obj/item/reagent_containers/glass/bottle/vial/small/preloaded/dexalin
 	name = "blue hypovial (dexalin)"
 	icon_state = "hypovial-d"
 	comes_with = list(/datum/reagent/medicine/dexalin = 60)
 
-/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/tricord
-	name = "hypovial (tricordrazine)"
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/cureall
+	name = "hypovial (cureall)"
 	icon_state = "hypovial"
-	comes_with = list(/datum/reagent/medicine/tricordrazine = 60)
+	comes_with = list(/datum/reagent/medicine/cureall = 60)
+
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/morphine
+	name = "hypovial (morphine)"
+	icon_state = "hypovial-pink"
+	comes_with = list(/datum/reagent/medicine/morphine = 60)
+
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/atropine
+	name = "hypovial (atropine)"
+	icon_state = "hypovial-t"
+	comes_with = list(/datum/reagent/medicine/atropine = 60)
+
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/erp //its not what it looks like i swear
+	name = "hypovial (radiation purgant)"
+	icon_state = "hypovial-k"
+	comes_with = list(/datum/reagent/medicine/anti_rad = 60)
+
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/salclu
+	name = "hypovial (SalGlu Solution)"
+	icon_state = "hypovial"
+	comes_with = list(/datum/reagent/medicine/salglu_solution = 60)
+
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan
+	name = "hypovial (chitosan)"
+	icon_state = "hypovial-b"
+	amount_per_transfer_from_this = 5
+	comes_with = list(/datum/reagent/medicine/chitosan = 60)
+
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/combat_drug
+	name = "hypovial (shoal juice)"
+	icon_state = "hypovial-b"
+	amount_per_transfer_from_this = 10
+	comes_with = list(/datum/reagent/drug/combat_drug = 20, /datum/reagent/medicine/silfrine = 20, /datum/reagent/medicine/ysiltane = 20)
+
+/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/stasis
+	name = "hypovial (stasis)"
+	icon_state = "hypovial-b"
+	amount_per_transfer_from_this = 5
+	comes_with = list(/datum/reagent/medicine/stasis = 60)
 
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/CMO
 	name = "deluxe hypovial"
 	icon_state = "hypoviallarge-cmos"
-	comes_with = list(/datum/reagent/medicine/omnizine = 40, /datum/reagent/medicine/leporazine = 40, /datum/reagent/medicine/atropine = 40)
+	comes_with = list(/datum/reagent/medicine/panacea = 40, /datum/reagent/medicine/leporazine = 40, /datum/reagent/medicine/atropine = 40)
 
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/bicaridine
-	name = "large red hypovial (bicaridine plus)"
+/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/silfrine
+	name = "large red hypovial (silfrine)"
 	icon_state = "hypoviallarge-b"
-	comes_with = list(/datum/reagent/medicine/bicaridinep = 120)
+	comes_with = list(/datum/reagent/medicine/silfrine = 120)
 
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/antitoxin
-	name = "large green hypovial (carthatoline)"
+/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/gjalrazine
+	name = "large green hypovial (gjalrazine)"
 	icon_state = "hypoviallarge-a"
-	comes_with = list(/datum/reagent/medicine/carthatoline = 120)
+	comes_with = list(/datum/reagent/medicine/gjalrazine = 120)
 
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/kelotane
-	name = "large orange hypovial (dermaline)"
+/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/ysiltane
+	name = "large orange hypovial (ysiltane)"
 	icon_state = "hypoviallarge-k"
-	comes_with = list(/datum/reagent/medicine/dermaline = 120)
+	comes_with = list(/datum/reagent/medicine/ysiltane = 120)
 
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/dexalin
-	name = "large blue hypovial (dexalin plus)"
+/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salbutamol
+	name = "large blue hypovial (salbutamol)"
 	icon_state = "hypoviallarge-d"
-	comes_with = list(/datum/reagent/medicine/dexalinp = 120)
+	comes_with = list(/datum/reagent/medicine/salbutamol = 120)
 
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/charcoal
 	name = "large black hypovial (charcoal)"
 	icon_state = "hypoviallarge-t"
 	comes_with = list(/datum/reagent/medicine/charcoal = 120)
 
-/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/tricord
-	name = "large hypovial (tricord)"
+/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/cureall
+	name = "large hypovial (cureall)"
 	icon_state = "hypoviallarge"
-	comes_with = list(/datum/reagent/medicine/tricordrazine = 120)
+	comes_with = list(/datum/reagent/medicine/cureall = 120)
 
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salglu
 	name = "large green hypovial (salglu)"
@@ -190,4 +232,4 @@
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/combat
 	name = "combat hypovial"
 	icon_state = "hypoviallarge-t"
-	comes_with = list(/datum/reagent/medicine/epinephrine = 3, /datum/reagent/medicine/omnizine = 19, /datum/reagent/medicine/leporazine = 19, /datum/reagent/medicine/atropine = 19) //Epinephrine's main effect here is to kill suff damage, so we don't need much given atropine
+	comes_with = list(/datum/reagent/drug/combat_drug = 40, /datum/reagent/medicine/silfrine = 20, /datum/reagent/medicine/ysiltane = 20, /datum/reagent/medicine/synaptizine = 40)

@@ -11,7 +11,7 @@
 	icon = 'icons/mob/alien.dmi'
 	max_integrity = 100
 
-/obj/structure/alien/run_obj_armor(damage_amount, damage_type, damage_flag = 0, attack_dir)
+/obj/structure/alien/run_atom_armor(damage_amount, damage_type, damage_flag = 0, attack_dir)
 	if(damage_flag == "melee")
 		switch(damage_type)
 			if(BRUTE)
@@ -182,7 +182,7 @@
 		qdel(src)
 		return
 	//lets try to grow in a direction
-	for(var/turf/check_turf in src_turf.GetAtmosAdjacentTurfs())
+	for(var/turf/check_turf as anything in src_turf.get_atmos_adjacent_turfs())
 		//we cannot grow on blacklisted turfs
 		if(is_type_in_list(check_turf, blacklisted_turfs))
 			continue
@@ -271,7 +271,7 @@
 	STOP_PROCESSING(SSobj, src)
 	return ..()
 
-/obj/structure/alien/weeds/node/process()
+/obj/structure/alien/weeds/node/process(seconds_per_tick)
 	//we need to have a cooldown, so check and then add
 	if(!COOLDOWN_FINISHED(src, growtime))
 		return
@@ -322,7 +322,7 @@
 		addtimer(CALLBACK(src, PROC_REF(Grow)), GROWTH_TIME)
 	proximity_monitor = new(src, status == GROWN ? 1 : 0)
 	if(status == BURST)
-		obj_integrity = integrity_failure * max_integrity
+		atom_integrity = integrity_failure * max_integrity
 
 /obj/structure/alien/egg/update_icon_state()
 	switch(status)
@@ -347,19 +347,19 @@
 	if(user.getorgan(/obj/item/organ/alien/plasmavessel))
 		switch(status)
 			if(BURST)
-				to_chat(user, "<span class='notice'>You clear the hatched egg.</span>")
+				to_chat(user, span_notice("You clear the hatched egg."))
 				playsound(loc, 'sound/effects/attackblob.ogg', 100, TRUE)
 				qdel(src)
 				return
 			if(GROWING)
-				to_chat(user, "<span class='notice'>The child is not developed yet.</span>")
+				to_chat(user, span_notice("The child is not developed yet."))
 				return
 			if(GROWN)
-				to_chat(user, "<span class='notice'>You retrieve the child.</span>")
+				to_chat(user, span_notice("You retrieve the child."))
 				Burst(kill=FALSE)
 				return
 	else
-		to_chat(user, "<span class='notice'>It feels slimy.</span>")
+		to_chat(user, span_notice("It feels slimy."))
 		user.changeNext_move(CLICK_CD_MELEE)
 
 
@@ -389,10 +389,11 @@
 					if(child.TryCoupling(M))
 						break
 
-/obj/structure/alien/egg/obj_break(damage_flag)
+/obj/structure/alien/egg/atom_break(damage_flag)
 	if(!(flags_1 & NODECONSTRUCT_1))
 		if(status != BURST)
 			Burst(kill=TRUE)
+	. = ..()
 
 /obj/structure/alien/egg/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	if(exposed_temperature > 500)

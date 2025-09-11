@@ -22,6 +22,12 @@
 /datum/movespeed_modifier/reagent/methamphetamine
 	multiplicative_slowdown = -0.65
 
+/datum/movespeed_modifier/reagent/retukemi
+	multiplicative_slowdown = 0.3
+
+/datum/movespeed_modifier/reagent/shoalmix
+	multiplicative_slowdown = -0.4
+
 /datum/movespeed_modifier/reagent/nitryl
 	multiplicative_slowdown = -0.65
 
@@ -39,3 +45,9 @@
 
 /datum/movespeed_modifier/reagent/shock_wine
 	multiplicative_slowdown = -0.30
+
+/datum/movespeed_modifier/reagent/silfrine
+	multiplicative_slowdown = 0.2
+
+/datum/movespeed_modifier/reagent/silfrine_od
+	multiplicative_slowdown = 0.4

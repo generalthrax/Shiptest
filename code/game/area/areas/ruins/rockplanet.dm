@@ -2,11 +2,6 @@
 /area/ruin/rockplanet
 	icon_state = "red"
 
-//budgetcuts
-/area/ruin/rockplanet/nanotrasen
-	name = "Abandoned Research Facility"
-	always_unpowered = FALSE
-
 //shippingdock
 /area/ruin/rockplanet/shippingdockoffice
 	name = "Employee Office"
@@ -97,3 +92,107 @@
 
 /area/ruin/rockplanet/mining_base/rig_two
 	name = "Mining Platform #2"
+
+// Rust Base
+
+/area/ruin/rockplanet/rust_base
+	name = "Crashed Ship"
+
+/area/ruin/rockplanet/rust_base/hallway
+	name = "ISV Rust Base Hallway"
+	icon_state = "hallA"
+
+/area/ruin/rockplanet/rust_base/engine_one
+	name = "ISV Rust Base Port Engine"
+	icon_state = "engine"
+
+/area/ruin/rockplanet/rust_base/engine_two
+	name = "ISV Rust Base Starboard Engine"
+	icon_state = "engine"
+
+/area/ruin/rockplanet/rust_base/slop
+	name = "ISV Rust Base Canteen"
+	icon_state = "bar"
+
+/area/ruin/rockplanet/rust_base/dorms
+	name = "ISV Rust Base Dorms"
+	icon_state = "crew_quarters"
+
+/area/ruin/rockplanet/rust_base/cryo
+	name = "ISV Rust Base Cryo"
+	icon_state = "cryo"
+
+/area/ruin/rockplanet/rust_base/mechbay
+	name = "ISV Rust Base Mech Bay"
+	icon_state = "medresearch"
+
+/area/ruin/rockplanet/rust_base/hallway2
+	name = "ISV Rust Base Port Primary Hallway"
+	icon_state = "hallP"
+
+/area/ruin/rockplanet/rust_base/bridge
+	name = "ISV Rust Base Bridge"
+	icon_state = "bridge"
+
+/area/ruin/rockplanet/rust_base/armory
+	name = "ISV Rust Base Armory"
+	icon_state = "armory"
+
+/area/ruin/rockplanet/rust_base/tanto2
+	name = "Crashed Moonshiner"
+	icon_state = "green"
+
+//River Valley Stash
+
+/area/ruin/rockplanet/river_valley_stash/shuttle
+	name = "Frontiersmen Shuttle"
+	icon_state = "shuttle"
+
+/area/ruin/rockplanet/river_valley_stash/hut
+	name = "Frontiersmen Hut"
+	icon_state = "red"
+
+// Frontiersman Trench Complex
+/area/ruin/rockplanet/somme/armory
+	name = "Bunker Armoury"
+	icon_state = "armory"
+
+/area/ruin/rockplanet/somme/dorms
+	name = "Frontiersman Dorms"
+	icon_state = "crew_quarters"
+
+/area/ruin/rockplanet/somme/hallway
+	name = "Main Hallway"
+	icon_state = "hallC"
+
+/area/ruin/rockplanet/somme/ross
+	name = "Big Boss' Quarters"
+	icon_state = "bridge"
+
+/area/ruin/rockplanet/somme/medical
+	name = "Bunker medbay"
+	icon_state = "blue"
+
+/area/ruin/rockplanet/somme/restroom
+	name = "Bunker Restroom"
+	icon_state = "green"
+
+/area/ruin/rockplanet/somme/engineeering
+	name = "Utilities Bunker"
+	icon_state = "engine"
+
+/area/ruin/rockplanet/somme/landing
+	name = "Warehouse"
+	icon_state = "storage"
+
+/area/ruin/rockplanet/somme/trench
+	name = "Trenchline"
+	icon_state = "danger"
+
+/area/ruin/rockplanet/somme/mainlock
+	name = "Bunker Main Airlock"
+	icon_state = "hallF"
+
+/area/ruin/rockplanet/somme/seclock
+	name = "Bunker Secondary Airlock"
+	icon_state = "hallP"

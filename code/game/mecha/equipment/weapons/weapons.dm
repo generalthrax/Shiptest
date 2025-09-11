@@ -10,13 +10,22 @@
 	var/projectile_delay = 0
 	var/firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect	//the visual effect appearing when the weapon is fired.
 	var/kickback = TRUE //Will using this weapon in no grav push mecha back.
+	var/full_auto = FALSE // whether this gun is full auto.
+	var/mode = 0
+	var/eject_casings = FALSE
+	var/one_casing = FALSE // for shotgun type weapons so it doesnt throw out more casings than it's suppossed too
+	var/casing_type
+
+	var/scoped = FALSE //whether this weapon is scoped
+	var/zoom_mod = 6
+	var/zoom_out_mod = 2
 
 /obj/item/mecha_parts/mecha_equipment/weapon/can_attach(obj/mecha/M)
 	if(!..())
 		return FALSE
 	if(istype(M, /obj/mecha/combat))
 		return TRUE
-	if((locate(/obj/item/mecha_parts/concealed_weapon_bay) in M.contents) && !(locate(/obj/item/mecha_parts/mecha_equipment/weapon) in M.equipment))
+	if((locate(/obj/item/mecha_parts/weapon_bay) in M.contents) && !(locate(/obj/item/mecha_parts/mecha_equipment/weapon) in M.equipment))
 		return TRUE
 	return FALSE
 
@@ -29,12 +38,15 @@
 
 	var/turf/curloc = get_turf(chassis)
 	var/turf/targloc = get_turf(target)
+
+	var/modifiers = params2list(params)
+
 	if (!targloc || !istype(targloc) || !curloc)
 		return 0
 	if (targloc == curloc)
 		return 0
 
-	set_ready_state(0)
+	var/eject_done = FALSE
 	for(var/i=1 to get_shot_amount())
 		var/obj/projectile/A = new projectile(curloc)
 		A.firer = chassis.occupant
@@ -48,10 +60,15 @@
 				spread = round((rand() - 0.5) * variance)
 			else
 				spread = round((i / projectiles_per_shot - 0.5) * variance)
-		A.preparePixelProjectile(target, chassis.occupant, params, spread)
+		A.preparePixelProjectile(target, chassis.occupant, modifiers, spread)
 
 		A.fire()
 		playsound(chassis, fire_sound, 50, TRUE)
+		if(eject_casings && !eject_done)
+			var/obj/item/ammo_casing/ejected = new casing_type(src)
+			ejected.on_eject(chassis)
+			if(one_casing)
+				eject_done = TRUE
 
 		sleep(max(0, projectile_delay))
 
@@ -74,33 +91,49 @@
 	chassis.use_power(energy_drain*get_shot_amount())
 	addtimer(CALLBACK(src, PROC_REF(set_ready_state), 1), equip_cooldown)
 
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser
-	equip_cooldown = 8
-	name = "\improper CH-PS \"Immolator\" laser"
-	desc = "A weapon for combat exosuits. Shoots basic lasers."
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/carbine
+	equip_cooldown = 2
+	name = "\improper CH-PS \"Downpour\" energy carbine"
+	desc = "A weapon for combat exosuits. A rapid fire energy carbine with both lethal and disabler modes."
 	icon_state = "mecha_laser"
 	energy_drain = 30
 	projectile = /obj/projectile/beam/laser
 	fire_sound = 'sound/weapons/laser.ogg'
 	harmful = TRUE
+	full_auto = TRUE
 
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/disabler
-	equip_cooldown = 8
-	name = "\improper CH-DS \"Peacemaker\" disabler"
-	desc = "A weapon for combat exosuits. Shoots basic disablers."
-	icon_state = "mecha_disabler"
-	energy_drain = 30
-	projectile = /obj/projectile/beam/disabler
-	fire_sound = 'sound/weapons/taser2.ogg'
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/carbine/Topic(href, href_list)
+	. = ..()
+	if(href_list["mode"])
+		mode = text2num(href_list["mode"])
+		switch(mode)
+			//laser mode
+			if(0)
+				occupant_message(span_notice("Carbine now set to laser."))
+				energy_drain = initial(energy_drain)
+				projectile = /obj/projectile/beam/laser
+				harmful = TRUE
+				fire_sound = 'sound/weapons/laser.ogg'
+			//disabler mode
+			if(1)
+				occupant_message(span_notice("Carbine now set to disable."))
+				energy_drain = (initial(energy_drain))/2
+				projectile = /obj/projectile/beam/disabler
+				harmful = FALSE
+				fire_sound = 'sound/weapons/taser2.ogg'
 
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy
-	equip_cooldown = 15
-	name = "\improper CH-LC \"Solaris\" laser cannon"
-	desc = "A weapon for combat exosuits. Shoots heavy lasers."
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/carbine/get_equip_info()
+	return "[..()] \[<a href='byond://?src=[REF(src)];mode=0'>Laser</a>|<a href='byond://?src=[REF(src)];mode=1'>Disabler</a>\]"
+
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser
+	equip_cooldown = 30
+	name = "\improper CH-LC \"Solaris\" beam sniper"
+	desc = "A weapon for combat exosuits. Shoots long range heavy beam lasers."
 	icon_state = "mecha_laser"
-	energy_drain = 60
-	projectile = /obj/projectile/beam/laser/heavylaser
+	energy_drain = 1000
+	projectile = /obj/projectile/beam/emitter/hitscan
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	full_auto = FALSE
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/ion
 	equip_cooldown = 20
@@ -122,14 +155,16 @@
 	harmful = TRUE
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse
-	equip_cooldown = 30
+	equip_cooldown = 4
 	name = "eZ-13 MK2 heavy pulse rifle"
-	desc = "A weapon for combat exosuits. Shoots powerful destructive blasts capable of demolishing obstacles."
+	desc = "A scoped weapon for combat exosuits. Shoots powerful destructive blasts capable of demolishing obstacles."
 	icon_state = "mecha_pulse"
 	energy_drain = 120
 	projectile = /obj/projectile/beam/pulse/heavy
 	fire_sound = 'sound/weapons/marauder.ogg'
 	harmful = TRUE
+	full_auto = TRUE
+	scoped = TRUE
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/plasma
 	equip_cooldown = 10
@@ -183,20 +218,25 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic
 	name = "general ballistic weapon"
 	fire_sound = 'sound/weapons/gun/smg/shot.ogg'
-	var/projectiles
+	var/projectiles = 0
 	var/projectiles_max //maximum amount of projectiles that can be chambered.
-	var/projectiles_cache //ammo to be loaded in, if possible.
+	/// the amount of spare ammunition that this weapon is attached with
+	var/projectiles_cache = 0
 	var/projectiles_cache_max
 	var/projectile_energy_cost
 	var/disabledreload //For weapons with no cache (like the rockets) which are reloaded by hand
 	var/ammo_type
+	casing_type = /obj/item/ammo_casing/spent/mecha
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/Initialize() //initial(projectiles) prevented me from making mech weapons start empty TODO: PORT ALL OF TG MECH IMPROVEMENTS
 	. = ..()
 	projectiles_max ||= projectiles
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/get_shot_amount()
-	return min(projectiles, projectiles_per_shot)
+	if(one_casing)
+		return projectiles_per_shot
+	else
+		return min(projectiles, projectiles_per_shot)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/action_checks(target)
 	if(!..())
@@ -206,10 +246,14 @@
 	return 1
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/get_equip_info()
-	return "[..()] \[[src.projectiles][projectiles_cache_max &&!projectile_energy_cost?"/[projectiles_cache]":""]\][!disabledreload &&(src.projectiles < projectiles_max)?" - <a href='?src=[REF(src)];rearm=1'>Rearm</a>":null]"
+	return "[..()] \[[src.projectiles][projectiles_cache_max &&!projectile_energy_cost?"/[projectiles_cache]":""]\][!disabledreload &&(src.projectiles < projectiles_max)?" - <a href='byond://?src=[REF(src)];rearm=1'>Rearm</a>":null]"
 
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/rearm()
+	chassis.balloon_alert(chassis.occupant, "rearming...")
+	if(!do_after(chassis.occupant, 4 SECONDS, chassis, IGNORE_TARGET_LOC_CHANGE))
+		chassis.balloon_alert(chassis.occupant, "rearm failed!")
+		return FALSE
 	if(projectiles < projectiles_max)
 		var/projectiles_to_add = projectiles_max - projectiles
 
@@ -230,6 +274,7 @@
 				projectiles_cache = 0
 
 		send_byjax(chassis.occupant,"exosuit.browser","[REF(src)]",src.get_equip_info())
+		chassis.balloon_alert(chassis.occupant, "weapon rearmed!")
 		log_message("Rearmed [src.name].", LOG_MECHA)
 		return TRUE
 
@@ -247,10 +292,19 @@
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/action(atom/target)
 	if(..())
-		projectiles -= get_shot_amount()
+		if(one_casing)
+			projectiles--
+		else
+			projectiles -= get_shot_amount()
 		send_byjax(chassis.occupant,"exosuit.browser","[REF(src)]",src.get_equip_info())
 		return 1
 
+/obj/item/ammo_casing/spent/mecha
+	name = "bullet casing"
+	desc = "A bullet casing designed to fired from exosuit mounted weapons."
+	projectile_type = null
+	icon_state = "rifle-brass"
+	transform = matrix(1.3, 0, 0, 0, 1.3, 0)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/carbine
 	name = "\improper FNX-99 \"Phoenix\" Exosuit Carbine"
@@ -258,53 +312,75 @@
 	icon_state = "mecha_carbine"
 	equip_cooldown = 10
 	projectile = /obj/projectile/bullet/incendiary/fnx99
-	projectiles = 24
-	projectiles_cache = 24
-	projectiles_cache_max = 96
+	projectiles_max = 24
+	projectiles_cache_max = 48
 	harmful = TRUE
 	ammo_type = "incendiary"
+	eject_casings = TRUE
+	casing_type = /obj/item/ammo_casing/spent/mecha/carbine
+
+/obj/item/ammo_casing/spent/mecha/carbine
+	name = "FNX-99 5.56mm Incendiary bullet"
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot
 	name = "\improper LBX-10 \"Scattershot\" Heavy Shotgun"
 	desc = "A weapon for combat exosuits. Shoots a spread of pellets."
 	icon_state = "mecha_scatter"
-	equip_cooldown = 20
-	projectile = /obj/projectile/bullet/scattershot
-	projectiles = 40
-	projectiles_cache = 40
-	projectiles_cache_max = 160
-	projectiles_per_shot = 4
+	equip_cooldown = 10
+	projectile = /obj/projectile/bullet/pellet/scattershot
+	projectiles_max = 24
+	projectiles_cache_max = 48
+	projectiles_per_shot = 8
 	variance = 25
 	harmful = TRUE
 	ammo_type = "scattershot"
+	eject_casings = TRUE
+	one_casing = TRUE
+	casing_type = /obj/item/ammo_casing/spent/mecha/scattergun
+
+/obj/item/ammo_casing/spent/mecha/scattergun
+	name = "8ga scattergun shell"
+	icon_state = "buckshot"
+	bounce_sfx_override = 'sound/weapons/gun/general/bulletcasing_shotgun_bounce.ogg'
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	name = "\improper UMG-2 Mounted Machine Gun"
-	desc = "A weapon for combat exosuits. Shoots a rapid, three shot burst."
+	desc = "A weapon for combat exosuits. A fully automatic mounted machine gun with an impressive rate of fire and capacity."
 	icon_state = "mecha_uac2"
-	equip_cooldown = 10
+	equip_cooldown = 2
 	projectile = /obj/projectile/bullet/lmg
-	projectiles = 300
-	projectiles_cache = 300
-	projectiles_cache_max = 1200
-	projectiles_per_shot = 3
+	projectiles_max = 50
+	projectiles_cache_max = 200
 	variance = 6
 	randomspread = TRUE
-	projectile_delay = 2
 	harmful = TRUE
 	ammo_type = "lmg"
+	full_auto = TRUE
+	eject_casings = TRUE
+	casing_type = /obj/item/ammo_casing/spent/mecha/umg
+
+/obj/item/ammo_casing/spent/mecha/umg
+	name = "UMG 7.5x50mm bullet"
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/railgun
+	name = "\improper PR-05 Mounted Plasma Railgun"
+	desc = "A plasma railgun manufactured by NT and taking a different direction from their handheld counterpart. Namely utilizing the plasma NT had such large quantities of to help with heating and accelerating the projectile. Shoots super-heated high-density iron-tungsten rods at ludicrous speeds."
+	icon_state = "mecha_railgun"
+	equip_cooldown = 34
+	projectile = /obj/projectile/bullet/p50/penetrator/sabot
+	projectiles_max = 15
+	projectiles_cache_max = 60
+	ammo_type = "railgun"
+	fire_sound = 'sound/weapons/blastcannon.ogg'
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/mounted
 	name = "\improper Mounted Heavy Machine Gun"
 	desc = "A heavy calibre machine gun commonly used by motorized forces, famed for it's ability to give people on the recieving end more holes than normal. It is modified to be attached to vehicles"
 	projectile = /obj/projectile/bullet/lmg
 	fire_sound = 'sound/weapons/gun/hmg/hmg.ogg'
-	projectiles = 0
 	projectiles_max = 100
-	projectiles_cache = 0
 	projectiles_cache_max = 100
 	equip_cooldown = 1 SECONDS
-	projectile_delay = 1
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack
 	name = "\improper SRM-8 missile rack"
@@ -333,8 +409,6 @@
 	icon_state = "mecha_missilerack_six"
 	projectile = /obj/projectile/bullet/a84mm_br
 	fire_sound = 'sound/weapons/gun/general/rocket_launch.ogg'
-	projectiles = 6
-	projectiles_cache = 0
 	projectiles_cache_max = 0
 	disabledreload = TRUE
 	equip_cooldown = 60
@@ -369,8 +443,6 @@
 	icon_state = "mecha_grenadelnchr"
 	projectile = /obj/item/grenade/flashbang
 	fire_sound = 'sound/weapons/gun/general/grenade_launch.ogg'
-	projectiles = 6
-	projectiles_cache = 6
 	projectiles_cache_max = 24
 	missile_speed = 1.5
 	equip_cooldown = 60
@@ -386,93 +458,8 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang/clusterbang //Because I am a heartless bastard -Sieve //Heartless? for making the poor man's honkblast? - Kaze
 	name = "\improper SOB-3 grenade launcher"
 	desc = "A weapon for combat exosuits. Launches primed clusterbangs. You monster."
-	projectiles = 3
-	projectiles_cache = 0
 	projectiles_cache_max = 0
 	disabledreload = TRUE
 	projectile = /obj/item/grenade/clusterbuster
 	equip_cooldown = 90
 	ammo_type = "clusterbang"
-
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar
-	name = "banana mortar"
-	desc = "Equipment for clown exosuits. Launches banana peels."
-	icon_state = "mecha_bananamrtr"
-	projectile = /obj/item/grown/bananapeel
-	fire_sound = 'sound/items/bikehorn.ogg'
-	projectiles = 15
-	missile_speed = 1.5
-	projectile_energy_cost = 100
-	equip_cooldown = 20
-
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar/can_attach(obj/mecha/combat/honker/M)
-	if(..())
-		if(istype(M))
-			return 1
-	return 0
-
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/mousetrap_mortar
-	name = "mousetrap mortar"
-	desc = "Equipment for clown exosuits. Launches armed mousetraps."
-	icon_state = "mecha_mousetrapmrtr"
-	projectile = /obj/item/assembly/mousetrap/armed
-	fire_sound = 'sound/items/bikehorn.ogg'
-	projectiles = 15
-	missile_speed = 1.5
-	projectile_energy_cost = 100
-	equip_cooldown = 10
-
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/mousetrap_mortar/can_attach(obj/mecha/combat/honker/M)
-	if(..())
-		if(istype(M))
-			return 1
-	return 0
-
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/mousetrap_mortar/proj_init(obj/item/assembly/mousetrap/armed/M)
-	M.secured = 1
-
-
-//Classic extending punching glove, but weaponised!
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/punching_glove
-	name = "\improper Oingo Boingo Punch-face"
-	desc = "Equipment for clown exosuits. Delivers fun right to your face!"
-	icon_state = "mecha_punching_glove"
-	energy_drain = 250
-	equip_cooldown = 20
-	range = MECHA_MELEE|MECHA_RANGED
-	missile_range = 5
-	projectile = /obj/item/punching_glove
-	fire_sound = 'sound/items/bikehorn.ogg'
-	projectiles = 10
-	projectile_energy_cost = 500
-	diags_first = TRUE
-
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/punching_glove/can_attach(obj/mecha/combat/honker/M)
-	if(..())
-		if(istype(M))
-			return 1
-	return 0
-
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/punching_glove/action(target)
-	. = ..()
-	if(.)
-		chassis.occupant_message("<font color='red' size='5'>HONK</font>")
-
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/punching_glove/proj_init(obj/item/punching_glove/PG)
-	if(!istype(PG))
-		return
-	//has to be low sleep or it looks weird, the beam doesn't exist for very long so it's a non-issue
-	chassis.Beam(PG, icon_state = "chain", time = missile_range * 20, maxdistance = missile_range + 2)
-
-/obj/item/punching_glove
-	name = "punching glove"
-	desc = "INCOMING HONKS"
-	throwforce = 35
-	icon_state = "punching_glove"
-
-/obj/item/punching_glove/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
-	if(!..())
-		if(ismovable(hit_atom))
-			var/atom/movable/AM = hit_atom
-			AM.safe_throw_at(get_edge_target_turf(AM,get_dir(src, AM)), 7, 2)
-		qdel(src)

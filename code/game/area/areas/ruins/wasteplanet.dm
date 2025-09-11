@@ -79,3 +79,67 @@
 /area/ruin/wasteplanet/wasteplanet_shipbreaking/ship
 	name = "Abandoned Shipbreaking Yard"
 	icon_state = "red"
+
+//Syndicate Comms+Med base
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/tcom1
+	name = "ICW Base Tcomms room"
+	icon_state = "bridge"
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/cic
+	name = "ICW Base Command Zone"
+	icon_state = "bridge"
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/vault
+	name = "ICW Base Vault"
+	icon_state = "security"
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/eng
+	name = "ICW Base Engineering Bay"
+	icon_state = "engine"
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/tcommoni
+	name = "ICW Base Tcomms Monitoring"
+	icon_state = "bridge"
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/warehouse
+	name = "ICW Base Warehouse"
+	icon_state = "storage"
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/hab
+	name = "ICW Base Main Hab Zone"
+	icon_state = "crew_quarters"
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/cybersun
+	name = "ICW Base Cybersun Wing"
+	icon_state = "blue"
+
+/area/ruin/wasteplanet/wasteplanet_icwbase/TURRETS
+	name = "ICW Base TURRETS"
+	icon_state = "red"
+
+//Salvage Facility
+
+/area/ruin/wasteplanet/facility
+	name = "Central Hallway"
+	icon_state = "bluenew"
+
+/area/ruin/wasteplanet/facility/westbay
+	name = "Salvage Bay West"
+	icon_state = "green"
+
+/area/ruin/wasteplanet/facility/eastbay
+	name = "Salvage Bay East"
+	icon_state = "yellow"
+
+/area/ruin/wasteplanet/facility/crew
+	name = "Crew Area"
+	icon_state = "purple"
+
+/area/ruin/wasteplanet/facility/northwing
+	name = "North Wing"
+	icon_state = "fmaint"
+
+/area/ruin/wasteplanet/facility/southwing
+	name = "South Wing"
+	icon_state = "amaint"

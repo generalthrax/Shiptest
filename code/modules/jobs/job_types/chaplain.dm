@@ -30,8 +30,6 @@
 			B.name = pick("The Holy Bible","The Dead Sea Scrolls")
 		if("buddhism")
 			B.name = "The Sutras"
-		if("clownism","honkmother","honk","honkism","comedy")
-			B.name = pick("The Holy Joke Book", "Just a Prank", "Hymns to the Honkmother")
 		if("chaos")
 			B.name = "The Book of Lorgar"
 		if("cthulhu")
@@ -98,11 +96,8 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/civilian/chaplain
 	backpack_contents = list(
-		/obj/item/stamp/chap = 1,
 		/obj/item/camera/spooky = 1
 		)
 
 	backpack = /obj/item/storage/backpack/cultpack
 	satchel = /obj/item/storage/backpack/cultpack
-
-	chameleon_extras = /obj/item/stamp/chap

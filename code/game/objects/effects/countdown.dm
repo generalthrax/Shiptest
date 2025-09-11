@@ -41,7 +41,7 @@
 	// Get the value from our atom
 	return
 
-/obj/effect/countdown/process()
+/obj/effect/countdown/process(seconds_per_tick)
 	if(!attached_to || QDELETED(attached_to))
 		qdel(src)
 	forceMove(get_turf(attached_to))
@@ -51,7 +51,7 @@
 	displayed_text = new_val
 
 	if(displayed_text)
-		maptext = "<span class='maptext'><font size = [text_size]>[displayed_text]</font></span>"
+		maptext = MAPTEXT("<font size = [text_size]>[displayed_text]</font>")
 	else
 		maptext = null
 
@@ -99,7 +99,7 @@
 	var/obj/machinery/power/supermatter_crystal/S = attached_to
 	if(!istype(S))
 		return
-	return "<div align='center' valign='middle' style='position:relative; top:0px; left:0px'>[round(S.get_integrity(), 1)]%</div>"
+	return "<div align='center' valign='middle' style='position:relative; top:0px; left:0px'>[round(S.get_crystal_integ_percent(), 1)]%</div>"
 
 /obj/effect/countdown/transformer
 	name = "transformer countdown"
@@ -190,3 +190,19 @@
 	else if(C.occupant)
 		var/completion = round(C.get_completion())
 		return completion
+
+/obj/effect/countdown/overmap_event
+	name = "overmap token countdown"
+	mouse_opacity = FALSE
+	invisibility = 0
+	text_size = 2
+
+/obj/effect/countdown/overmap_event/get_value()
+	var/obj/overmap/token = attached_to
+	var/datum/overmap/attached_datum
+	if(!istype(token))
+		return
+	attached_datum = token.parent
+
+	var/time_left = max(0, (attached_datum.death_time - world.time) / 10)
+	return round(time_left)

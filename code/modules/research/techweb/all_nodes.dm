@@ -69,7 +69,7 @@
 	starting_node = TRUE
 	display_name = "Basic Medical Equipment"
 	description = "Basic medical tools and equipment."
-	design_ids = list("cybernetic_liver", "cybernetic_heart", "cybernetic_lungs", "cybernetic_stomach", "scalpel", "circular_saw", "surgicaldrill", "retractor", "cautery", "hemostat",
+	design_ids = list("cybernetic_liver", "cybernetic_heart", "cybernetic_lungs", "cybernetic_stomach", "scalpel", "circular_saw", "bonesetter", "surgical_tape", "surgicaldrill", "retractor", "cautery", "hemostat",
 					"syringe", "plumbing_rcd", "beaker", "large_beaker", "xlarge_beaker", "dropper", "defibmountdefault", "portable_chem_mixer")
 
 /////////////////////////Biotech/////////////////////////
@@ -168,7 +168,6 @@
 	description = "Big Data, in space!"
 	prereq_ids = list("base")
 	design_ids = list(
-		"survey-handheld-advanced",
 		"design_disk_adv"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
@@ -414,7 +413,6 @@
 		"mining",
 		"rdcamera",
 		"seccamera",
-		"survey-handheld-elite",
 		"design_disk_super",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
@@ -445,7 +443,7 @@
 	display_name = "Computerized Recordkeeping"
 	description = "Organized record databases and how they're used."
 	prereq_ids = list("comptech")
-	design_ids = list("secdata", "med_data", "prisonmanage", "vendor", "automated_announcement", "survey-handheld-exp", "design_disk_elite")
+	design_ids = list("secdata", "med_data", "prisonmanage", "vendor", "automated_announcement", "design_disk_elite")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 	export_price = 2000
 
@@ -771,8 +769,8 @@
 
 /datum/techweb_node/odysseus
 	id = "mecha_odysseus"
-	display_name = "EXOSUIT: Odysseus"
-	description = "Odysseus exosuit designs"
+	display_name = "EXOSUIT: 200 Series"
+	description = "200 Series exosuit designs"
 	prereq_ids = list("base")
 	design_ids = list("odysseus_chassis", "odysseus_torso", "odysseus_head", "odysseus_left_arm", "odysseus_right_arm" ,"odysseus_left_leg", "odysseus_right_leg",
 	"odysseus_main", "odysseus_peri")
@@ -781,8 +779,8 @@
 
 /datum/techweb_node/gygax
 	id = "mech_gygax"
-	display_name = "EXOSUIT: Gygax"
-	description = "Gygax exosuit designs"
+	display_name = "EXOSUIT: 500 Series"
+	description = "500 Series exosuit designs"
 	prereq_ids = list("adv_mecha", "weaponry")
 	design_ids = list("gygax_chassis", "gygax_torso", "gygax_head", "gygax_left_arm", "gygax_right_arm", "gygax_left_leg", "gygax_right_leg", "gygax_main",
 	"gygax_peri", "gygax_targ", "gygax_armor")
@@ -887,15 +885,6 @@
 	description = "An advanced piece of exosuit weaponry"
 	prereq_ids = list("adv_beam_weapons")
 	design_ids = list("mech_laser_heavy")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	export_price = 5000
-
-/datum/techweb_node/mech_disabler
-	id = "mech_disabler"
-	display_name =  "Exosuit Weapon (CH-DS \"Peacemaker\" Mounted Disabler)"
-	description = "A basic piece of exosuit weaponry"
-	prereq_ids = list("beam_weapons")
-	design_ids = list("mech_disabler")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 

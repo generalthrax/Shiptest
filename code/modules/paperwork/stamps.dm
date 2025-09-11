@@ -26,19 +26,14 @@
 	icon_state = "stamp-qm"
 	dye_color = DYE_QM
 
-/obj/item/stamp/law
-	name = "law office's rubber stamp"
-	icon_state = "stamp-law"
-	dye_color = DYE_LAW
-
 /obj/item/stamp/captain
 	name = "captain's rubber stamp"
 	icon_state = "stamp-cap"
 	dye_color = DYE_CAPTAIN
 
-/obj/item/stamp/head_of_personnel
-	name = "head of personnel's rubber stamp"
-	icon_state = "stamp-hop"
+/obj/item/stamp/officer
+	name = "first officer's rubber stamp"
+	icon_state = "stamp-fo"
 	dye_color = DYE_FO
 
 /obj/item/stamp/hos
@@ -66,17 +61,7 @@
 	icon_state = "stamp-deny"
 	dye_color = DYE_REDCOAT
 
-/obj/item/stamp/clown
-	name = "clown's rubber stamp"
-	icon_state = "stamp-clown"
-	dye_color = DYE_CLOWN
-
-/obj/item/stamp/mime
-	name = "mime's rubber stamp"
-	icon_state = "stamp-mime"
-	dye_color = DYE_MIME
-
-/obj/item/stamp/chap
+/obj/item/stamp/roumain
 	name = "chaplain's rubber stamp"
 	icon_state = "stamp-chap"
 	dye_color = DYE_CHAP
@@ -126,6 +111,11 @@
 	icon_state = "stamp-ngr_ensign"
 	dye_color = DYE_QM
 
+/obj/item/stamp/hardliners
+	name = "Hardliners rubber stamp"
+	icon_state = "stamp-hardliners"
+	dye_color = DYE_SYNDICATE
+
 /obj/item/stamp/solgov
 	name = "SolGov rubber stamp"
 	icon_state = "stamp-solgov"
@@ -152,19 +142,38 @@
 	icon_state = "stamp-inteq_corpsman"
 
 /obj/item/stamp/clip
-	name = "CLIP Minutemen rubber stamp"
-	icon_state = "stamp-cmm"
+	name = "CLIP rubber stamp"
+	icon_state = "stamp-clip"
 	dye_color = DYE_FO
+
+/obj/item/stamp/clip/cmm
+	name = "CLIP Minutemen rubber stamp"
+	icon_state = "stamp-clip_cmm"
+	dye_color = DYE_CAPTAIN
 
 /obj/item/stamp/clip/gold
-	name = "GOLD rubber stamp"
-	icon_state = "stamp-gold"
-	dye_color = DYE_FO
+	name = "CLIP-GOLD rubber stamp"
+	icon_state = "stamp-clip_gold"
 
 /obj/item/stamp/clip/bard
-	name = "BARD rubber stamp"
-	icon_state = "stamp-bard"
-	dye_color = DYE_FO
+	name = "CLIP-BARD rubber stamp"
+	icon_state = "stamp-clip_bard"
+
+/obj/item/stamp/clip/lord
+	name = "CLIP-LORD rubber stamp"
+	icon_state = "stamp-clip_lord"
+
+/obj/item/stamp/clip/land
+	name = "CLIP-LAND rubber stamp"
+	icon_state = "stamp-clip_land"
+
+/obj/item/stamp/clip/meld
+	name = "CLIP-MELD rubber stamp"
+	icon_state = "stamp-clip_meld"
+
+/obj/item/stamp/clip/deed
+	name = "CLIP-DEED rubber stamp"
+	icon_state = "stamp-clip_deed"
 
 /obj/item/stamp/suns
 	name = "SUNS rubber stamp"

@@ -101,6 +101,7 @@
 	.["joinMode"] = parent_ship.join_mode
 	.["cooldown"] = COOLDOWN_TIMELEFT(parent_ship, job_slot_adjustment_cooldown)
 	.["isAdmin"] = !!user.client?.holder
+	.["crew_share"] = parent_ship.crew_share
 	.["applications"] = list()
 	for(var/a_key as anything in parent_ship.applications)
 		var/datum/ship_application/app = parent_ship.applications[a_key]
@@ -163,6 +164,7 @@
 					parent_ship.join_mode = SHIP_JOIN_MODE_CLOSED
 				if(SHIP_JOIN_MODE_CLOSED)
 					parent_ship.join_mode = SHIP_JOIN_MODE_OPEN
+			GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
 			return TRUE
 
 		if("memo")
@@ -175,7 +177,15 @@
 			if(memo_result && length(memo_result))
 				parent_ship.memo = memo_result
 				check_blinking()
+			GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
 			return TRUE
+
+		if("adjustshare")
+			var/value = params["adjust"]
+			if(value)
+				parent_ship.crew_share = round(value) / 100
+			return TRUE
+
 
 		if("setApplication")
 			var/datum/ship_application/target_app = locate(params["ref"])
@@ -213,10 +223,10 @@
 				return TRUE
 			var/mob/new_owner = parent_ship.get_mob_if_valid_owner(target_mind)
 			if(!new_owner)
-				to_chat(user, "<span class='notice'>Selected candidate is currently ineligible for ownership.</span>", MESSAGE_TYPE_INFO)
+				to_chat(user, span_notice("Selected candidate is currently ineligible for ownership."), MESSAGE_TYPE_INFO)
 				return TRUE
 			else if(!user.client?.holder && new_owner == user) // admins get an exception, in case they want to reclaim ownership
-				to_chat(user, "<span class='notice'>You can't transfer ownership to yourself!</span>", MESSAGE_TYPE_INFO)
+				to_chat(user, span_notice("You can't transfer ownership to yourself!"), MESSAGE_TYPE_INFO)
 				return TRUE
 
 			parent_ship.set_owner_mob(new_owner)
@@ -245,7 +255,7 @@
 
 			COOLDOWN_START(parent_ship, job_slot_adjustment_cooldown, (5 SECONDS) * cooldown_coeff)
 			parent_ship.job_slots[target_job] = new_amount
-			update_static_data(user)
+			GLOB.ship_select_tgui?.update_static_data_for_all_viewers()
 			return TRUE
 
 // Admin-only ship owner action.

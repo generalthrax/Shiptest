@@ -8,6 +8,12 @@ GLOBAL_PROTECT(mentors)
 GLOBAL_LIST_EMPTY_TYPED(directory, /client)				//all ckeys with associated client
 GLOBAL_LIST_EMPTY(stealthminID)						//reference list with IDs that store ckeys, for stealthmins
 
+GLOBAL_LIST_INIT(dangerous_turfs, typecacheof(list(
+	/turf/open/lava,
+	/turf/open/chasm,
+	/turf/open/space,
+	/turf/open/openspace)))
+
 //Since it didn't really belong in any other category, I'm putting this here
 //This is for procs to replace all the goddamn 'in world's that are chilling around the code
 
@@ -22,7 +28,7 @@ GLOBAL_LIST_EMPTY(joined_player_list)		//all clients that have joined the game a
 GLOBAL_LIST_EMPTY(new_player_list)			//all /mob/dead/new_player, in theory all should have clients and those that don't are in the process of spawning and get deleted when done.
 GLOBAL_LIST_EMPTY(pre_setup_antags)			//minds that have been picked as antag by the gamemode. removed as antag datums are set.
 GLOBAL_LIST_EMPTY(silicon_mobs)				//all silicon mobs
-GLOBAL_LIST_EMPTY(mob_living_list)				//all instances of /mob/living and subtypes
+GLOBAL_LIST_EMPTY(mob_living_list)			//all instances of /mob/living and subtypes
 GLOBAL_LIST_EMPTY(carbon_list)				//all instances of /mob/living/carbon and subtypes, notably does not contain brains or simple animals
 GLOBAL_LIST_EMPTY(human_list)				//all instances of /mob/living/carbon/human and subtypes
 GLOBAL_LIST_EMPTY(ai_list)
@@ -37,8 +43,38 @@ GLOBAL_LIST_EMPTY(narcd_underages)
 
 GLOBAL_LIST_EMPTY(real_names_joined)
 
-GLOBAL_LIST_EMPTY(language_datum_instances)
-GLOBAL_LIST_EMPTY(all_languages)
+/// List of language prototypes to reference, assoc [type] = prototype
+GLOBAL_LIST_INIT_TYPED(language_datum_instances, /datum/language, init_language_prototypes())
+/// List if all language typepaths learnable, IE, those with keys
+GLOBAL_LIST_INIT(all_languages, init_all_languages())
+// /List of language prototypes to reference, assoc "name" = typepath
+GLOBAL_LIST_INIT(language_types_by_name, init_language_types_by_name())
+
+/proc/init_language_prototypes()
+	var/list/lang_list = list()
+	for(var/datum/language/lang_type as anything in typesof(/datum/language))
+		if(!initial(lang_type.key))
+			continue
+
+		lang_list[lang_type] = new lang_type()
+	return lang_list
+
+/proc/init_all_languages()
+	var/list/lang_list = list()
+	for(var/datum/language/lang_type as anything in typesof(/datum/language))
+		if(!initial(lang_type.key))
+			continue
+		lang_list += lang_type
+	return lang_list
+
+/proc/init_language_types_by_name()
+	var/list/lang_list = list()
+	for(var/datum/language/lang_type as anything in typesof(/datum/language))
+		if(!initial(lang_type.key))
+			continue
+		lang_list[initial(lang_type.name)] = lang_type
+	return lang_list
+
 
 GLOBAL_LIST_EMPTY(sentient_disease_instances)
 

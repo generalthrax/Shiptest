@@ -222,140 +222,140 @@
 
 //Odysseus
 /datum/design/odysseus_chassis
-	name = "Exosuit Chassis (\"Odysseus\")"
+	name = "Exosuit Chassis (200 Series)"
 	id = "odysseus_chassis"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/chassis/odysseus
 	materials = list(/datum/material/iron=20000)
 	construction_time = 100
-	category = list("Odysseus")
+	category = list("200 Series")
 
 /datum/design/odysseus_torso
-	name = "Exosuit Torso (\"Odysseus\")"
+	name = "Exosuit Torso (200 Series)"
 	id = "odysseus_torso"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/odysseus_torso
 	materials = list(/datum/material/iron=12000)
 	construction_time = 180
-	category = list("Odysseus")
+	category = list("200 Series")
 
 /datum/design/odysseus_head
-	name = "Exosuit Head (\"Odysseus\")"
+	name = "Exosuit Head (200 Series)"
 	id = "odysseus_head"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/odysseus_head
 	materials = list(/datum/material/iron=6000,/datum/material/glass = 10000)
 	construction_time = 100
-	category = list("Odysseus")
+	category = list("200 Series")
 
 /datum/design/odysseus_left_arm
-	name = "Exosuit Left Arm (\"Odysseus\")"
+	name = "Exosuit Left Arm (200 Series)"
 	id = "odysseus_left_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/odysseus_left_arm
 	materials = list(/datum/material/iron=6000)
 	construction_time = 120
-	category = list("Odysseus")
+	category = list("200 Series")
 
 /datum/design/odysseus_right_arm
-	name = "Exosuit Right Arm (\"Odysseus\")"
+	name = "Exosuit Right Arm (200 Series)"
 	id = "odysseus_right_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/odysseus_right_arm
 	materials = list(/datum/material/iron=6000)
 	construction_time = 120
-	category = list("Odysseus")
+	category = list("200 Series")
 
 /datum/design/odysseus_left_leg
-	name = "Exosuit Left Leg (\"Odysseus\")"
+	name = "Exosuit Left Leg (200 Series)"
 	id = "odysseus_left_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/odysseus_left_leg
 	materials = list(/datum/material/iron=7000)
 	construction_time = 130
-	category = list("Odysseus")
+	category = list("200 Series")
 
 /datum/design/odysseus_right_leg
-	name = "Exosuit Right Leg (\"Odysseus\")"
+	name = "Exosuit Right Leg (200 Series)"
 	id = "odysseus_right_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/odysseus_right_leg
 	materials = list(/datum/material/iron=7000)
 	construction_time = 130
-	category = list("Odysseus")
+	category = list("200 Series")
 
 //Gygax
 /datum/design/gygax_chassis
-	name = "Exosuit Chassis (\"Gygax\")"
+	name = "Exosuit Chassis (500 Series)"
 	id = "gygax_chassis"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/chassis/gygax
 	materials = list(/datum/material/iron=20000)
 	construction_time = 100
-	category = list("Gygax")
+	category = list("500 Series")
 
 /datum/design/gygax_torso
-	name = "Exosuit Torso (\"Gygax\")"
+	name = "Exosuit Torso (500 Series)"
 	id = "gygax_torso"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/gygax_torso
 	materials = list(/datum/material/iron=20000,/datum/material/glass = 10000,/datum/material/gold=2000, /datum/material/silver=2000)
 	construction_time = 300
-	category = list("Gygax")
+	category = list("500 Series")
 
 /datum/design/gygax_head
-	name = "Exosuit Head (\"Gygax\")"
+	name = "Exosuit Head (500 Series)"
 	id = "gygax_head"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/gygax_head
 	materials = list(/datum/material/iron=10000,/datum/material/glass = 5000, /datum/material/gold=2000, /datum/material/silver=2000)
 	construction_time = 200
-	category = list("Gygax")
+	category = list("500 Series")
 
 /datum/design/gygax_left_arm
-	name = "Exosuit Left Arm (\"Gygax\")"
+	name = "Exosuit Left Arm (500 Series)"
 	id = "gygax_left_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/gygax_left_arm
 	materials = list(/datum/material/iron=15000, /datum/material/gold=1000, /datum/material/silver=1000)
 	construction_time = 200
-	category = list("Gygax")
+	category = list("500 Series")
 
 /datum/design/gygax_right_arm
-	name = "Exosuit Right Arm (\"Gygax\")"
+	name = "Exosuit Right Arm (500 Series)"
 	id = "gygax_right_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/gygax_right_arm
 	materials = list(/datum/material/iron=15000, /datum/material/gold=1000, /datum/material/silver=1000)
 	construction_time = 200
-	category = list("Gygax")
+	category = list("500 Series")
 
 /datum/design/gygax_left_leg
-	name = "Exosuit Left Leg (\"Gygax\")"
+	name = "Exosuit Left Leg (500 Series)"
 	id = "gygax_left_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/gygax_left_leg
 	materials = list(/datum/material/iron=15000, /datum/material/gold=2000, /datum/material/silver=2000)
 	construction_time = 200
-	category = list("Gygax")
+	category = list("500 Series")
 
 /datum/design/gygax_right_leg
-	name = "Exosuit Right Leg (\"Gygax\")"
+	name = "Exosuit Right Leg (500 Series)"
 	id = "gygax_right_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/gygax_right_leg
 	materials = list(/datum/material/iron=15000, /datum/material/gold=2000, /datum/material/silver=2000)
 	construction_time = 200
-	category = list("Gygax")
+	category = list("500 Series")
 
 /datum/design/gygax_armor
-	name = "Exosuit Armor (\"Gygax\")"
+	name = "Exosuit Armor (500 Series)"
 	id = "gygax_armor"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/gygax_armor
 	materials = list(/datum/material/iron=15000,/datum/material/gold=10000, /datum/material/silver=10000, /datum/material/titanium=10000)
 	construction_time = 600
-	category = list("Gygax")
+	category = list("500 Series")
 
 //Durand
 /datum/design/durand_chassis
@@ -429,71 +429,6 @@
 	materials = list(/datum/material/iron=30000,/datum/material/uranium=25000,/datum/material/titanium=20000)
 	construction_time = 600
 	category = list("Durand")
-
-//H.O.N.K
-/datum/design/honk_chassis
-	name = "Exosuit Chassis (\"H.O.N.K\")"
-	id = "honk_chassis"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/chassis/honker
-	materials = list(/datum/material/iron=20000)
-	construction_time = 100
-	category = list("H.O.N.K")
-
-/datum/design/honk_torso
-	name = "Exosuit Torso (\"H.O.N.K\")"
-	id = "honk_torso"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/part/honker_torso
-	materials = list(/datum/material/iron=20000,/datum/material/glass = 10000,/datum/material/hellstone=10000)
-	construction_time = 300
-	category = list("H.O.N.K")
-
-/datum/design/honk_head
-	name = "Exosuit Head (\"H.O.N.K\")"
-	id = "honk_head"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/part/honker_head
-	materials = list(/datum/material/iron=10000,/datum/material/glass = 5000,/datum/material/hellstone=5000)
-	construction_time = 200
-	category = list("H.O.N.K")
-
-/datum/design/honk_left_arm
-	name = "Exosuit Left Arm (\"H.O.N.K\")"
-	id = "honk_left_arm"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/part/honker_left_arm
-	materials = list(/datum/material/iron=15000,/datum/material/hellstone=5000)
-	construction_time = 200
-	category = list("H.O.N.K")
-
-/datum/design/honk_right_arm
-	name = "Exosuit Right Arm (\"H.O.N.K\")"
-	id = "honk_right_arm"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/part/honker_right_arm
-	materials = list(/datum/material/iron=15000,/datum/material/hellstone=5000)
-	construction_time = 200
-	category = list("H.O.N.K")
-
-/datum/design/honk_left_leg
-	name = "Exosuit Left Leg (\"H.O.N.K\")"
-	id = "honk_left_leg"
-	build_type = MECHFAB
-	build_path =/obj/item/mecha_parts/part/honker_left_leg
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
-	construction_time = 200
-	category = list("H.O.N.K")
-
-/datum/design/honk_right_leg
-	name = "Exosuit Right Leg (\"H.O.N.K\")"
-	id = "honk_right_leg"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/part/honker_right_leg
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
-	construction_time = 200
-	category = list("H.O.N.K")
-
 
 //Phazon
 /datum/design/phazon_chassis
@@ -652,33 +587,6 @@
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
-/datum/design/mech_mousetrap_mortar
-	name = "H.O.N.K Mousetrap Mortar"
-	id = "mech_mousetrap_mortar"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/mousetrap_mortar
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
-	construction_time = 300
-	category = list("Exosuit Equipment")
-
-/datum/design/mech_banana_mortar
-	name = "H.O.N.K Banana Mortar"
-	id = "mech_banana_mortar"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=5000)
-	construction_time = 300
-	category = list("Exosuit Equipment")
-
-/datum/design/mech_punching_glove
-	name = "Oingo Boingo Punch-face"
-	id = "mech_punching_face"
-	build_type = MECHFAB
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/punching_glove
-	materials = list(/datum/material/iron=20000,/datum/material/hellstone=7500)
-	construction_time = 400
-	category = list("Exosuit Equipment")
-
 /////////////////////////////////////////
 //////////////Borg Upgrades//////////////
 /////////////////////////////////////////
@@ -752,15 +660,6 @@
 	build_type = MECHFAB
 	build_path = /obj/item/borg/upgrade/syndicate
 	materials = list(/datum/material/iron = 15000, /datum/material/glass = 15000, /datum/material/diamond = 10000)
-	construction_time = 120
-	category = list("Cyborg Upgrade Modules")
-
-/datum/design/borg_transform_clown
-	name = "Cyborg Upgrade (Clown Module)"
-	id = "borg_transform_clown"
-	build_type = MECHFAB
-	build_path = /obj/item/borg/upgrade/transform/clown
-	materials = list(/datum/material/iron = 15000, /datum/material/glass = 15000, /datum/material/hellstone = 1000)
 	construction_time = 120
 	category = list("Cyborg Upgrade Modules")
 

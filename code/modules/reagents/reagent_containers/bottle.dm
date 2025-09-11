@@ -39,6 +39,21 @@
 	desc = "A small bottle of morphine."
 	list_reagents = list(/datum/reagent/medicine/morphine = 30)
 
+/obj/item/reagent_containers/glass/bottle/dimorlin
+	name = "dimorlin bottle"
+	desc = "A small bottle of dimorlin. Apply one dose at a time."
+	list_reagents = list(/datum/reagent/medicine/dimorlin = 30)
+
+/obj/item/reagent_containers/glass/bottle/tramal
+	name = "tramal bottle"
+	desc = "A small bottle of tramal."
+	list_reagents = list(/datum/reagent/medicine/tramal = 30)
+
+/obj/item/reagent_containers/glass/bottle/chitosan
+	name = "chitosan bottle"
+	desc = "A small bottle of chitosan."
+	list_reagents = list(/datum/reagent/medicine/chitosan = 30)
+
 /obj/item/reagent_containers/glass/bottle/painkiller_booze
 	name = "'painkiller' bottle"
 	desc = "A small bottle of an unmarked substance called 'painkiller.' Will this really work?"
@@ -53,11 +68,6 @@
 	name = "mannitol bottle"
 	desc = "A small bottle of Mannitol. Useful for healing brain damage."
 	list_reagents = list(/datum/reagent/medicine/mannitol = 30)
-
-/obj/item/reagent_containers/glass/bottle/charcoal
-	name = "charcoal bottle"
-	desc = "A small bottle of charcoal, which removes toxins and other chemicals from the bloodstream."
-	list_reagents = list(/datum/reagent/medicine/charcoal = 30)
 
 /obj/item/reagent_containers/glass/bottle/mutagen
 	name = "unstable mutagen bottle"
@@ -116,7 +126,7 @@
 
 /obj/item/reagent_containers/glass/bottle/traitor/Initialize()
 	. = ..()
-	extra_reagent = pick(/datum/reagent/toxin/polonium, /datum/reagent/toxin/histamine, /datum/reagent/toxin/formaldehyde, /datum/reagent/toxin/venom, /datum/reagent/toxin/fentanyl, /datum/reagent/toxin/cyanide)
+	extra_reagent = pick(/datum/reagent/toxin/polonium, /datum/reagent/toxin/histamine, /datum/reagent/toxin/formaldehyde, /datum/reagent/toxin/venom, /datum/reagent/toxin/cyanide)
 	reagents.add_reagent(extra_reagent, 3)
 
 /obj/item/reagent_containers/glass/bottle/polonium
@@ -133,11 +143,6 @@
 	name = "venom bottle"
 	desc = "A small bottle. Contains Venom."
 	list_reagents = list(/datum/reagent/toxin/venom = 30)
-
-/obj/item/reagent_containers/glass/bottle/fentanyl
-	name = "fentanyl bottle"
-	desc = "A small bottle. Contains Fentanyl."
-	list_reagents = list(/datum/reagent/toxin/fentanyl = 30)
 
 /obj/item/reagent_containers/glass/bottle/formaldehyde
 	name = "formaldehyde bottle"
@@ -208,11 +213,6 @@
 	name = "Experimental disease culture bottle"
 	desc = "A small bottle. Contains an untested viral culture in synthblood medium."
 	spawned_disease = /datum/disease/advance/random
-
-/obj/item/reagent_containers/glass/bottle/pierrot_throat
-	name = "Pierrot's Throat culture bottle"
-	desc = "A small bottle. Contains H0NI<42 virion culture in synthblood medium."
-	spawned_disease = /datum/disease/pierrot_throat
 
 /obj/item/reagent_containers/glass/bottle/cold
 	name = "Rhinovirus culture bottle"
@@ -397,23 +397,22 @@
 	volume = 50
 	list_reagents = list(/datum/reagent/medicine/epinephrine = 50)
 
-/obj/item/reagent_containers/glass/bottle/bicaridine
-	name = "bicaridine bottle"
-	desc = "A small bottle. Contains bicaridine, used to treat minor bruising."
+/obj/item/reagent_containers/glass/bottle/indomide
+	name = "indomide bottle"
+	desc = "A small bottle. Contains indomide, used to treat minor bruising."
 	volume = 50
-	list_reagents = list(/datum/reagent/medicine/bicaridine = 50)
+	list_reagents = list(/datum/reagent/medicine/indomide = 50)
 
-/obj/item/reagent_containers/glass/bottle/kelotane
-	name = "kelotane bottle"
-	desc = "A small bottle. Contains kelotane, used for minor burns and skin damage."
+/obj/item/reagent_containers/glass/bottle/alvitane
+	name = "alvitane bottle"
+	desc = "A small bottle. Contains alvitane, used for minor burns and skin damage. Best used as injection!"
 	volume = 50
-	list_reagents = list(/datum/reagent/medicine/kelotane = 50)
+	list_reagents = list(/datum/reagent/medicine/alvitane = 50)
 
-/obj/item/reagent_containers/glass/bottle/antitoxin
-	name = "dylovene bottle"
-	desc = "A small bottle. Contains dylovene, used to treat minor poisoning."
-	volume = 50
-	list_reagents = list(/datum/reagent/medicine/antitoxin = 50)
+/obj/item/reagent_containers/glass/bottle/charcoal
+	name = "charcoal bottle"
+	desc = "A small bottle of charcoal, which removes toxins and other chemicals from the bloodstream."
+	list_reagents = list(/datum/reagent/medicine/charcoal = 30)
 
 /obj/item/reagent_containers/glass/bottle/dexalin
 	name = "dexalin bottle"
@@ -421,16 +420,22 @@
 	volume = 50
 	list_reagents = list(/datum/reagent/medicine/dexalin = 50)
 
+/obj/item/reagent_containers/glass/bottle/gjalrazine
+	name = "gjalrazine bottle"
+	desc = "A small bottle. Contains gjalrazine, used to treat major toxic damage."
+	volume = 50
+	list_reagents = list(/datum/reagent/medicine/gjalrazine = 50)
+
 /obj/item/reagent_containers/glass/bottle/epinephrine/sleeper
 	cap_on = FALSE
 
-/obj/item/reagent_containers/glass/bottle/bicaridine/sleeper
+/obj/item/reagent_containers/glass/bottle/indomide/sleeper
 	cap_on = FALSE
 
-/obj/item/reagent_containers/glass/bottle/kelotane/sleeper
+/obj/item/reagent_containers/glass/bottle/alvitane/sleeper
 	cap_on = FALSE
 
-/obj/item/reagent_containers/glass/bottle/antitoxin/sleeper
+/obj/item/reagent_containers/glass/bottle/charcoal/sleeper
 	cap_on = FALSE
 
 /obj/item/reagent_containers/glass/bottle/dexalin/sleeper

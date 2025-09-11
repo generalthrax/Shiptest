@@ -96,20 +96,17 @@
 /datum/asset/spritesheet/simple/paper
 	name = "paper"
 	assets = list(
-		"stamp-clown" = 'icons/stamp_icons/large_stamp-clown.png',
 		"stamp-deny" = 'icons/stamp_icons/large_stamp-deny.png',
 		"stamp-ok" = 'icons/stamp_icons/large_stamp-ok.png',
 		"stamp-void" = 'icons/stamp_icons/large_stamp-void.png',
-		"stamp-hop" = 'icons/stamp_icons/large_stamp-hop.png',
+		"stamp-fo" = 'icons/stamp_icons/large_stamp-fo.png',
 		"stamp-cmo" = 'icons/stamp_icons/large_stamp-cmo.png',
 		"stamp-ce" = 'icons/stamp_icons/large_stamp-ce.png',
 		"stamp-hos" = 'icons/stamp_icons/large_stamp-hos.png',
 		"stamp-rd" = 'icons/stamp_icons/large_stamp-rd.png',
 		"stamp-cap" = 'icons/stamp_icons/large_stamp-cap.png',
 		"stamp-qm" = 'icons/stamp_icons/large_stamp-qm.png',
-		"stamp-law" = 'icons/stamp_icons/large_stamp-law.png',
 		"stamp-chap" = 'icons/stamp_icons/large_stamp-chap.png',
-		"stamp-mime" = 'icons/stamp_icons/large_stamp-mime.png',
 		"stamp-syndicate" = 'icons/stamp_icons/large_stamp-syndicate.png',
 		"stamp-solgov" = 'icons/stamp_icons/large_stamp-solgov.png',
 		"stamp-inteq" = 'icons/stamp_icons/large_stamp-inteq.png',
@@ -118,8 +115,13 @@
 		"stamp-inteq_artificer" = 'icons/stamp_icons/large_stamp-inteq_artificer.png',
 		"stamp-inteq_corpsman" = 'icons/stamp_icons/large_stamp-inteq_corpsman.png',
 		"stamp-clip" = 'icons/stamp_icons/large_stamp-clip.png',
-		"stamp-bard" = 'icons/stamp_icons/large_stamp-bard.png',
-		"stamp-gold" = 'icons/stamp_icons/large_stamp-gold.png',
+		"stamp-clip_cmm" = 'icons/stamp_icons/large_stamp-clip_cmm.png',
+		"stamp-clip_gold" = 'icons/stamp_icons/large_stamp-clip_gold.png',
+		"stamp-clip_bard" = 'icons/stamp_icons/large_stamp-clip_bard.png',
+		"stamp-clip_lord" = 'icons/stamp_icons/large_stamp-clip_lord.png',
+		"stamp-clip_land" = 'icons/stamp_icons/large_stamp-clip_land.png',
+		"stamp-clip_meld" = 'icons/stamp_icons/large_stamp-clip_meld.png',
+		"stamp-clip_deed" = 'icons/stamp_icons/large_stamp-clip_deed.png',
 		"stamp-cybersun" = 'icons/stamp_icons/large_stamp-cybersun.png',
 		"stamp-biodynamics" = 'icons/stamp_icons/large_stamp-biodynamics.png',
 		"stamp-donk" = 'icons/stamp_icons/large_stamp-donk.png',
@@ -128,6 +130,7 @@
 		"stamp-ngr_fore" = 'icons/stamp_icons/large_stamp-ngr_foreman.png',
 		"stamp-ngr_lieu" = 'icons/stamp_icons/large_stamp-ngr_lieutenant.png',
 		"stamp-ngr_ensign" = 'icons/stamp_icons/large_stamp-ngr_ensign.png',
+		"stamp-hardliners" = 'icons/stamp_icons/large_stamp-hardliners.png',
 		"stamp-nt" = 'icons/stamp_icons/large_stamp-nt_generic.png',
 		"stamp-nt_cap" = 'icons/stamp_icons/large_stamp-nt_captain.png',
 		"stamp-nt_fo" = 'icons/stamp_icons/large_stamp-nt_officer.png',
@@ -254,8 +257,6 @@
 		"meteors" = 'icons/UI_Icons/Achievements/Misc/meteors.png',
 		"timewaste" = 'icons/UI_Icons/Achievements/Misc/timewaste.png',
 		"upgrade" = 'icons/UI_Icons/Achievements/Misc/upgrade.png',
-		"clownking" = 'icons/UI_Icons/Achievements/Misc/clownking.png',
-		"clownthanks" = 'icons/UI_Icons/Achievements/Misc/clownthanks.png',
 		"rule8" = 'icons/UI_Icons/Achievements/Misc/rule8.png',
 		"snail" = 'icons/UI_Icons/Achievements/Misc/snail.png',
 		"mining" = 'icons/UI_Icons/Achievements/Skills/mining.png',
@@ -348,8 +349,8 @@
 				continue
 			I = icon(icon_file, icon_state, SOUTH)
 
-			// computers (and snowflakes) get their screen and keyboard sprites
-			if (ispath(item, /obj/machinery/computer) || ispath(item, /obj/machinery/power/solar_control))
+			// computers get their screen and keyboard sprites
+			if (ispath(item, /obj/machinery/computer))
 				var/obj/machinery/computer/C = item
 				var/screen = initial(C.icon_screen)
 				var/keyboard = initial(C.icon_keyboard)

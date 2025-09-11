@@ -52,7 +52,7 @@
 	if(length(contents))
 		. += span_notice("It has [contents[1]] sitting on it.")
 
-/obj/item/cutting_board/Destroy()
+/obj/item/cutting_board/deconstruct(disassembled)
 	drop_everything_contained()
 	return ..()
 
@@ -108,7 +108,7 @@
 	if(user.a_intent == INTENT_HARM)
 		return ..()
 
-	if(attacking_item.sharpness >= IS_SHARP_ACCURATE)
+	if(attacking_item.sharpness >= SHARP_POINTY)
 		if(!length(contents))
 			balloon_alert(user, "nothing to process")
 			return
