@@ -46,3 +46,44 @@
 2025-09-09:
   KOCMODECAHTHUK:
   - bugfix: Feeding another character
+2025-09-10:
+  Ratvarr:
+  - bugfix: Magpie medical and security offices have been adjusted slightly for better
+      space use.
+  firebudgy:
+  - bugfix: Missing vox sprite states for some NT outerwear.
+  generalthrax:
+  - rscdel: Removed riot grenade underbarrel from cargo
+  - balance: Increased frag grenade and other auxiliary grenade costs slightly
+  - balance: Removed heavy explosive damage from Frags and devastation from Concussion
+      grenades
+2025-09-11:
+  Gristlebee:
+  - rscadd: Tortuga Touch Ups
+  MemeSnorfer:
+  - balance: Many goggles and other protective wear now seal your eyes from environmental
+      effects.
+  - rscadd: Horse genemods for humans
+  thearbiber:
+  - bugfix: wind on bombed starport
+  zimon9:
+  - rscadd: Added a few modified mesons to the Derecho
+2025-09-13:
+  MemeSnorfer:
+  - balance: Increased the health of trees to 200, from 40
+  Rug-Dealer:
+  - rscadd: AI eyes and advanced camera consoles can now see through body cameras.
+2025-09-14:
+  meemofcourse:
+  - rscadd: Atlas-class Remap
+  - rscadd: Overhead lattices and pipes
+  - rscadd: Persistent photo album for CLIP correspondents
+  - imageadd: Green hazard stripes
+  - code_imp: Subtypes for C-MM Captain, Bridge Officer, ComMed, Naval Engineer, and
+      Sergeant lockers
+  - code_imp: Subtypes for C-MM and CLIP uniform lockers
+  - code_imp: No mag subtype of CM-24
+  - code_imp: Repathed C-MM sergeant, engineer, gunner, and medic
+  - code_imp: C-MM correspondent vest can store broadcast camera
+  thearbiber:
+  - rscadd: touches up oneshoulder
