@@ -187,6 +187,12 @@
 	faction_discount = 0
 	faction_locked = TRUE
 
+/datum/supply_pack/gun/rhino
+	name = "Rhino Revolver Crate"
+	desc = "Contains a double-action Rhino Revolver, chambered in .357 magnum."
+	cost = 1750
+	contains = list(/obj/item/storage/guncase/pistol/rhino)
+
 /datum/supply_pack/gun/ashhand
 	name = "Ashhand Hunting Revolver Crate"
 	desc = "Contains a single-action .45-70 hunting revolver manufactured by Hunter's Pride for use against the biggest game."
@@ -408,7 +414,7 @@
 	faction_locked = TRUE
 
 /datum/supply_pack/gun/x46
-	name = "X46 'Voltage' Variable Energy Blaster Crate"
+	name = "X46 'Amperage' Variable Energy Blaster Crate"
 	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. For NT employee use only."
 	cost = 3000
 	contains = list(/obj/item/storage/guncase/energy/ultima)
