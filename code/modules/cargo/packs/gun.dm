@@ -192,6 +192,9 @@
 	desc = "Contains a double-action Rhino Revolver, chambered in .357 magnum."
 	cost = 1750
 	contains = list(/obj/item/storage/guncase/pistol/rhino)
+	faction = /datum/faction/nt
+	faction_discount = 0
+	faction_locked = TRUE
 
 /datum/supply_pack/gun/ashhand
 	name = "Ashhand Hunting Revolver Crate"
