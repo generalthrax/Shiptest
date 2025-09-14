@@ -68,7 +68,7 @@
 /obj/item/ammo_box/magazine/zip_ammo_9mm
 	name = "budget pistol magazine (9x18mm)"
 	desc = "A cheaply-made, 8-round surplus magazine that fits standard-issue 9x18mm pistols. These rounds do okay damage, but struggle against armor."
-	icon_state = "Zip_mag-1"
+	icon_state = "zip_mag-1"
 	base_icon_state = "Zip_mag"
 	ammo_type = /obj/item/ammo_casing/c9mm/surplus
 	caliber = "9x18mm"
