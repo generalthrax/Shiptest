@@ -26,6 +26,9 @@
 	AddElement(/datum/element/microwavable, /obj/item/food/meat/steak/plain)
 */
 
+/obj/item/food/meat/slab/make_dryable()
+	AddElement(/datum/element/dryable, /obj/item/food/sosjerky/healthy)
+
 /obj/item/food/meat/slab/make_processable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/meat/rawcutlet/plain, 3, 30)
 
