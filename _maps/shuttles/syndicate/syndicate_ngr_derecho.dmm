@@ -1216,7 +1216,6 @@
 	dir = 4
 	},
 /obj/item/clothing/mask/balaclava/ngr,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1228,6 +1227,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/mask/breath/ngr,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
 "lh" = (
@@ -2481,7 +2481,6 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/under/syndicate/ngr/officer,
 /obj/item/clothing/suit/ngr,
-/obj/item/clothing/gloves/color/red/insulated,
 /obj/item/radio/headset/syndicate/alt,
 /obj/item/clothing/head/hardhat/ngr/foreman,
 /obj/item/clothing/glasses/sunglasses,
@@ -2492,6 +2491,7 @@
 /obj/item/storage/guncase/pistol/pc76,
 /obj/machinery/light/small/directional/west,
 /obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
+/obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "vs" = (
@@ -3597,10 +3597,7 @@
 	pixel_y = -1
 	},
 /obj/item/t_scanner,
-/obj/item/clothing/mask/gas/syndicate{
-	pixel_x = 7;
-	pixel_y = 6
-	},
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo/office)
 "Eh" = (
@@ -3939,7 +3936,6 @@
 /obj/effect/turf_decal/industrial/outline{
 	color = "#791500"
 	},
-/obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
@@ -3949,6 +3945,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/space/syndicate/ngr,
 /obj/item/clothing/head/helmet/space/syndicate/ngr,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/pod,
 /area/ship/storage/equip)
 "Id" = (
@@ -5374,7 +5371,6 @@
 /obj/effect/turf_decal/industrial/outline{
 	color = "#791500"
 	},
-/obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
@@ -5382,6 +5378,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/suit/space/syndicate/ngr,
 /obj/item/clothing/head/helmet/space/syndicate/ngr,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/pod,
 /area/ship/storage/equip)
 "UA" = (

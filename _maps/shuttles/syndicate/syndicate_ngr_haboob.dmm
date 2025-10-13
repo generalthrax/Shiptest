@@ -547,7 +547,6 @@
 /obj/effect/turf_decal/corner/opaque/red/half{
 	dir = 1
 	},
-/obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_x = -21;
@@ -556,6 +555,7 @@
 /obj/machinery/firealarm/directional/south,
 /obj/item/clothing/head/helmet/space/syndicate/ngr,
 /obj/item/clothing/suit/space/syndicate/ngr,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "lJ" = (
@@ -2092,7 +2092,6 @@
 /area/ship/crew/canteen)
 "OW" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 6
 	},
@@ -2100,6 +2099,7 @@
 	dir = 1
 	},
 /obj/item/clothing/suit/space/hardsuit/syndi/ngr,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "OZ" = (
@@ -2595,7 +2595,6 @@
 /obj/item/clothing/suit/space/syndicate/engie,
 /obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/corner/opaque/red/half{
 	dir = 1
 	},
@@ -2611,6 +2610,7 @@
 /obj/machinery/firealarm/directional/south{
 	pixel_x = 5
 	},
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/port)
 "Xp" = (
@@ -2670,7 +2670,6 @@
 	},
 /obj/effect/turf_decal/corner/opaque/beige,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/item/clothing/suit/space/hardsuit/syndi/ngr,
 /obj/machinery/light_switch{
 	pixel_y = 21;
@@ -2681,6 +2680,7 @@
 	pixel_x = -7;
 	pixel_y = 22
 	},
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "XY" = (

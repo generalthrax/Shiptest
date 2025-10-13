@@ -7706,30 +7706,6 @@
 	pixel_x = 4;
 	pixel_y = -5
 	},
-/obj/item/clothing/mask/gas/syndicate{
-	pixel_x = -7;
-	pixel_y = -3
-	},
-/obj/item/clothing/mask/gas/syndicate{
-	pixel_x = -7;
-	pixel_y = -3
-	},
-/obj/item/clothing/mask/gas/syndicate{
-	pixel_x = -7;
-	pixel_y = -3
-	},
-/obj/item/clothing/mask/gas/syndicate{
-	pixel_x = -7;
-	pixel_y = -3
-	},
-/obj/item/clothing/mask/gas/syndicate{
-	pixel_x = -7;
-	pixel_y = -3
-	},
-/obj/item/clothing/mask/gas/syndicate{
-	pixel_x = -7;
-	pixel_y = -3
-	},
 /obj/item/melee/knife/survival{
 	pixel_x = -5;
 	pixel_y = 8
@@ -7745,6 +7721,30 @@
 /obj/item/melee/knife/survival{
 	pixel_x = -5;
 	pixel_y = 8
+	},
+/obj/item/clothing/mask/gas/gorlex{
+	pixel_x = -7;
+	pixel_y = -7
+	},
+/obj/item/clothing/mask/gas/gorlex{
+	pixel_x = -7;
+	pixel_y = -7
+	},
+/obj/item/clothing/mask/gas/gorlex{
+	pixel_x = -7;
+	pixel_y = -7
+	},
+/obj/item/clothing/mask/gas/gorlex{
+	pixel_x = -7;
+	pixel_y = -6
+	},
+/obj/item/clothing/mask/gas/gorlex{
+	pixel_x = -7;
+	pixel_y = -7
+	},
+/obj/item/clothing/mask/gas/gorlex{
+	pixel_x = -7;
+	pixel_y = -7
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
