@@ -92,7 +92,7 @@
 		/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 		/obj/item/clothing/glasses/sunglasses/ballistic,
 		/obj/item/clothing/glasses/sunglasses/pgf,
-		/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
+		/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
 		/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
 		/obj/item/ammo_casing,
 		/obj/item/ammo_box/magazine/illestren_a850r,

@@ -1426,7 +1426,7 @@
 "nW" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /turf/open/floor/plasteel/tech,
 /area/ruin/rockplanet/rust_base/armory)
@@ -1564,7 +1564,7 @@
 /area/ruin/rockplanet/rust_base/hallway)
 "pz" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech,
 /area/ruin/rockplanet/rust_base/armory)
 "pD" = (
@@ -1609,7 +1609,7 @@
 /area/ruin/rockplanet/rust_base/engine_two)
 "qa" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/rust,
 /area/ruin/rockplanet/rust_base/armory)
@@ -1688,7 +1688,7 @@
 /obj/machinery/light/directional/north,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /turf/open/floor/plating,
 /area/ruin/rockplanet/rust_base/armory)
@@ -3312,7 +3312,7 @@
 /area/ruin/rockplanet/rust_base/hallway)
 "IA" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/ruin/rockplanet/rust_base/mechbay)
@@ -3844,7 +3844,7 @@
 /area/ruin/rockplanet/rust_base/hallway)
 "Ov" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
@@ -4042,7 +4042,7 @@
 /area/ruin/rockplanet/rust_base/mechbay)
 "Qe" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plating/rust,
 /area/ruin/rockplanet/rust_base/armory)
 "Qg" = (
@@ -4762,7 +4762,7 @@
 /area/ruin/rockplanet/rust_base/armory)
 "XJ" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/rust,

@@ -3,7 +3,7 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "b" = (

@@ -242,8 +242,8 @@
 //Glasses//
 ///////////
 
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr
-	name = "NGR modified mesons"
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex
+	name = "modified mesons"
 	desc = "A modified version of widely-used optical meson scanners, with a flash-proof tint and integrated security HUD. Unfortunately, the opaque visor disables the meson functionality."
 	icon_state = "ngr_goggles"
 	item_state = "ngr_goggles"

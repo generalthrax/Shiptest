@@ -59,7 +59,7 @@
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 
-	backpack_contents = list(/obj/item/clothing/mask/gas/ramzi)
+	backpack_contents = list(/obj/item/clothing/mask/gas/gorlex)
 
 //Security Officer
 
@@ -73,7 +73,7 @@
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 
-	backpack_contents = list(/obj/item/clothing/mask/gas/ramzi)
+	backpack_contents = list(/obj/item/clothing/mask/gas/gorlex)
 
 //Pilot
 

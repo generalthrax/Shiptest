@@ -135,7 +135,7 @@
 /obj/item/radio/headset/syndicate/alt/captain,
 /obj/item/storage/belt/military/assault,
 /obj/item/clothing/head/ngr/flap,
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
 /obj/structure/cable{
 	icon_state = "2-5"
 	},
@@ -407,8 +407,8 @@
 /obj/item/clothing/head/helmet/ngr,
 /obj/item/clothing/suit/armor/ngr,
 /obj/item/clothing/suit/armor/ngr,
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},

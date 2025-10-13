@@ -1498,7 +1498,7 @@
 /area/ruin/space/pgf_wreck/cargo)
 "it" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/item/clothing/suit/fire/firefighter,
 /obj/item/clothing/head/hardhat/red,
 /turf/open/floor/mineral/plastitanium/red,
@@ -5751,7 +5751,7 @@
 /area/ruin/space/has_grav/powered/ramzi_station/upper)
 "Gz" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/item/tank/jetpack/improvised,
 /obj/item/clothing/head/helmet/space/gezena,
 /obj/item/clothing/suit/space/gezena,
@@ -6553,7 +6553,7 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/item/tank/internals/oxygen,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/powered/ramzi_station/armory)
@@ -7636,7 +7636,7 @@
 /obj/item/clothing/head/helmet/space/syndicate/engie,
 /obj/item/clothing/suit/space/syndicate/engie,
 /obj/item/tank/internals/oxygen,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/powered/ramzi_station/engi)
 "Qu" = (
@@ -8528,7 +8528,7 @@
 /area/ruin/space/pgf_wreck/engineering)
 "Uy" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/item/tank/jetpack/improvised,
 /obj/item/clothing/suit/space/syndicate/ramzi,
 /obj/item/clothing/head/helmet/space/syndicate/ramzi,
@@ -8934,7 +8934,7 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/item/tank/internals/oxygen,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/powered/ramzi_station/armory)

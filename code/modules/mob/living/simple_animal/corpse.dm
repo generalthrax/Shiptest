@@ -20,7 +20,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 	ears = /obj/item/radio/headset/alt
-	mask = /obj/item/clothing/mask/gas/ramzi
+	mask = /obj/item/clothing/mask/gas/gorlex
 	head = /obj/item/clothing/head/helmet/m10/ramzi
 	back = /obj/item/storage/backpack
 	neck = /obj/item/clothing/neck/dogtag/ramzi
@@ -72,7 +72,7 @@
 	uniform = /obj/item/clothing/under/syndicate/ramzi/officer
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/ramzi/elite
 	head = /obj/item/clothing/head/helmet/space/hardsuit/syndi/ramzi/elite
-	mask = /obj/item/clothing/mask/gas/ramzi
+	mask = /obj/item/clothing/mask/gas/gorlex
 	back = /obj/item/tank/jetpack/oxygen/harness
 
 /datum/outfit/syndicatecaptaincorpse

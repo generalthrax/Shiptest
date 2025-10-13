@@ -214,9 +214,9 @@
 //Masks//
 /////////
 
-/obj/item/clothing/mask/gas/ramzi
-	name = "Ramzi Clique gas mask"
-	desc = "A protective gas mask salvaged back together by the Ramzi Clique."
+/obj/item/clothing/mask/gas/gorlex
+	name = "Marauder gas mask"
+	desc = "A rugged, protective gas mask often used by the New Gorlex Republic and Ramzi Clique."
 	icon = 'icons/obj/clothing/faction/ramzi/mask.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/ramzi/mask.dmi'
 	icon_state = "ramzi_gas"

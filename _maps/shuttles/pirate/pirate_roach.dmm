@@ -207,7 +207,7 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi/elite,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/machinery/firealarm/directional/south,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "cU" = (
@@ -467,7 +467,7 @@
 /obj/item/tank/internals/emergency_oxygen,
 /obj/item/clothing/suit/space/syndicate/ramzi,
 /obj/item/clothing/head/helmet/space/syndicate/ramzi,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "fQ" = (
@@ -1811,7 +1811,7 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/machinery/airalarm/directional/west,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
 "xL" = (
@@ -2031,7 +2031,7 @@
 	icon_state = "1-2"
 	},
 /obj/item/clothing/head/hardhat/ramzi,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /obj/item/clothing/head/ramzi/flap,
 /obj/item/clothing/under/syndicate/ramzi,
 /turf/open/floor/plasteel/tech,
@@ -2726,7 +2726,7 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
 "Jx" = (
@@ -3340,7 +3340,7 @@
 /obj/item/tank/internals/emergency_oxygen,
 /obj/item/clothing/suit/space/syndicate/ramzi,
 /obj/item/clothing/head/helmet/space/syndicate/ramzi,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "QG" = (
@@ -3940,7 +3940,7 @@
 /obj/machinery/firealarm/directional/east,
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi/elite,
 /obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/mask/gas/ramzi,
+/obj/item/clothing/mask/gas/gorlex,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
 "VD" = (

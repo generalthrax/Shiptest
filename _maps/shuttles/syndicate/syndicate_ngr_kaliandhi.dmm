@@ -1203,7 +1203,7 @@
 /obj/item/storage/guncase/pistol/a357{
 	mag_count = 3
 	},
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
 /obj/item/storage/backpack/messenger/sec,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/dorm/captain)
@@ -4050,7 +4050,7 @@
 	},
 /obj/item/storage/belt/military/assault,
 /obj/item/radio/headset/syndicate/alt/leader,
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
 /obj/item/storage/backpack/messenger/sec,
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm/commad)
@@ -7101,7 +7101,7 @@
 	dir = 4
 	},
 /obj/item/clothing/glasses/sunglasses,
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
 /obj/item/storage/backpack/messenger/sec,
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm/commad)
@@ -7686,22 +7686,10 @@
 	name = "equipment locker";
 	req_access = list(58)
 	},
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr{
-	pixel_x = 8;
-	pixel_y = 5
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr{
-	pixel_x = 8;
-	pixel_y = 5
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr{
-	pixel_x = 8;
-	pixel_y = 5
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr{
-	pixel_x = 8;
-	pixel_y = 5
-	},
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
+/obj/item/clothing/glasses/hud/security/sunglasses/gorlex,
 /obj/item/radio/headset/alt{
 	pixel_x = 4;
 	pixel_y = -5

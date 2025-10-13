@@ -1,0 +1,2 @@
+/obj/item/clothing/glasses/hud/security/sunglasses/ngr : /obj/item/clothing/glasses/hud/security/sunglasses/gorlex
+/obj/item/clothing/mask/gas/ramzi : /obj/item/clothing/mask/gas/gorlex

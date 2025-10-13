@@ -73,7 +73,7 @@
 	mask = /obj/item/clothing/mask/balaclava/ngr
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/syndicate/ngr
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/ngr
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/gorlex
 	suit = /obj/item/clothing/suit/armor/ngr
 	belt = /obj/item/storage/belt/security/webbing/ngr/cobra
 	suit_store = /obj/item/gun/ballistic/automatic/smg/cobra
@@ -295,7 +295,7 @@
 	name = "ERT - Ramzi Clique Cell Rifleman"
 
 	head = null
-	mask = /obj/item/clothing/mask/gas/ramzi
+	mask = /obj/item/clothing/mask/gas/gorlex
 	uniform = /obj/item/clothing/under/syndicate/ramzi/overalls
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/ramzi
 	suit_store = /obj/item/gun/ballistic/automatic/smg/cobra
