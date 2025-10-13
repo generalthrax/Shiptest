@@ -247,7 +247,7 @@
 	icon = 'icons/obj/clothing/faction/ramzi/belt.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/ramzi/belt.dmi'
 
-/obj/item/storage/belt/security/webbing/ramzi/cobra/PopulateContents()
+/obj/item/storage/belt/security/webbing/ramzi/hydra/PopulateContents()
 	. = ..()
 	for(var/i in 1 to 4)
 		new /obj/item/ammo_box/magazine/m556_42_hydra(src)
