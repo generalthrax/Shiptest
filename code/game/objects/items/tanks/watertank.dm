@@ -491,3 +491,10 @@
 
 /obj/item/watertank/op/make_noz()
 	return new /obj/item/reagent_containers/spray/mister/op(src)
+
+/obj/item/watertank/flamefist
+	name = "HAURHGHHH"
+	desc = "HUUAHGHH"
+	icon_state = "firetank"
+	item_state = "firetank"
+
