@@ -380,7 +380,7 @@
 /obj/item/reagent_containers/food/drinks/beer
 	name = "Carp Lite"
 	desc = "Brewed with \"Pure Ice Asteroid Spring Water\"."
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/light = 30)
 	icon_state = "beer"
 
 /obj/item/reagent_containers/food/drinks/ale
