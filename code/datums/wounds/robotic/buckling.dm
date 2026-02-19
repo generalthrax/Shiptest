@@ -23,8 +23,8 @@
 
 /datum/wound/blunt/buckling/moderate
 	name = "Bent Plating"
-	desc = "Patient's external plating is bent out of shape. Applying duct tape can temporarily secure the limb until proper repairs."
-	treat_text = "Recommend applying crowbar or wirecutters to bend plating back into place."
+	desc = "Patient's external plating is bent out of shape."
+	treat_text = "Recommend applying crowbar or wirecutters to bend plating back into place. Applying duct tape can temporarily secure the limb until proper repairs."
 	examine_desc = "is bent out of shape"
 	occur_text = "suddenly bends out of shape"
 	sound_effect = 'sound/effects/bin_open.ogg'
@@ -44,8 +44,8 @@
 
 /datum/wound/blunt/buckling/severe
 	name = "Buckled Chassis"
-	desc = "Patient's chassis is buckled inwards, causing disruption to mobility. Applying duct tape can temporarily secure the limb until proper repairs."
-	treat_text = "Recommend cutting plating off with a welding implement, adding new alloyed plating, and then welding until secure."
+	desc = "Patient's chassis is buckled inwards, causing disruption to mobility."
+	treat_text = "Recommend cutting plating off with a welding implement, adding new alloyed plating, and then welding until secure. Applying duct tape can temporarily secure the limb until proper repairs."
 	examine_desc = "is buckled inwards"
 	occur_text = "creaks and buckles inwards"
 	severity = WOUND_SEVERITY_SEVERE
@@ -65,8 +65,8 @@
 
 /datum/wound/blunt/buckling/critical
 	name = "Sheared Frame"
-	desc = "Patient's limb is sheared, rendering it inoperable. Applying duct tape can temporarily secure the limb until proper repairs."
-	treat_text = "Recommend cutting off external plating with a welding implement, disconnecting it with a wrench, then applying and securing rods with a wrench. Add and weld new alloyed plating."
+	desc = "Patient's limb is sheared, rendering it inoperable."
+	treat_text = "Recommend cutting off external plating with a welding implement, disconnecting it with a wrench, then applying and securing rods with a wrench. Add and weld new alloyed plating. Applying duct tape can temporarily secure the limb until proper repairs."
 	examine_desc = "is sheared off, barely hanging on by the wires"
 	occur_text = "violently snaps as its frame shears apart"
 	wound_flags = MANGLES_INTERIOR | PLATING_DAMAGE
