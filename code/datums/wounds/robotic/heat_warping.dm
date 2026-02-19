@@ -145,7 +145,7 @@
 /datum/wound/burn/heat_warping/severe
 	name = "Warped Plating"
 	desc = "Patient's external plating has been warped by thermal stress, threatening its structural integrity."
-	treat_text = "Recommend re-heating the external plating and bending it back into shape."
+	treat_text = "Recommend re-heating the external plating and bending it back into shape with a crowbar."
 	examine_desc = "is heat-warped and charred"
 	occur_text = "warps from the high temperature"
 	severity = WOUND_SEVERITY_SEVERE
@@ -162,7 +162,7 @@
 /datum/wound/burn/heat_warping/critical
 	name = "Deformed Chassis"
 	desc = "Patient's chassis has been severely deformed from temperatures close to its melting point and can no longer function."
-	treat_text = "Recommend replacement of the warped external plating."
+	treat_text = "Recommend cutting off external plating, and then disconnecting it with a wrench. Apply new rods and secure with a wrench. Apply and weld new alloyed plating."
 	examine_desc = "is a deformed mass of metal and slag"
 	occur_text = "glows red-hot and begins to deform"
 	severity = WOUND_SEVERITY_CRITICAL

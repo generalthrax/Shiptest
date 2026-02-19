@@ -25,7 +25,7 @@
 /datum/wound/electric/severe
 	name = "Damaged Electronics"
 	desc = "Patient's electronics are damaged, preventing movement and damaging internal components."
-	treat_text = "Recommend replacement of internal wiring."
+	treat_text = "Recommend unscrewing shell, opening servicing hatch, and replacing internal wiring. Re-heat solder or apply new solder. Close and ensure hatch is secured."
 	examine_desc = "occasionally sparks"
 	occur_text = "emits a shower of sparks"
 	threshold_penalty = 20
@@ -41,7 +41,7 @@
 /datum/wound/electric/critical
 	name = "Short Circuit"
 	desc = "Patient's internal circuitry is shorted, causing significant power drain and loss of function."
-	treat_text = "Recommend replacement of internal electronics and wiring."
+	treat_text = "Recommend unscrewing shell, opening servicing hatch, and preparing of electronics with a multitool. Proceed to replace the capacitor, internal wiring, and then either apply a welding implement or liquid solder. Ensure the hatch and shell are closed and secured."
 	examine_desc = "is twitching and emitting electrical arcs"
 	occur_text = "arcs as its electronics short out"
 	threshold_penalty = 40
