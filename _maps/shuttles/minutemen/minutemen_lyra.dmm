@@ -4890,6 +4890,11 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/mapping_helpers/crate_shelve,
+/obj/structure/closet/crate/secure/plasma{
+	name = "uranium crate (DANGER)"
+	},
+/obj/item/stack/sheet/mineral/uranium/ten,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Kk" = (
@@ -5130,6 +5135,9 @@
 /obj/machinery/power/ship_gravity,
 /obj/structure/cable{
 	icon_state = "0-9"
+	},
+/obj/structure/cable{
+	icon_state = "4-9"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engine)
@@ -6625,6 +6633,9 @@
 "ZA" = (
 /obj/effect/turf_decal/box,
 /obj/machinery/power/port_gen/pacman/super,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engine)
 "ZG" = (
