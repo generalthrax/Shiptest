@@ -2335,8 +2335,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/grunge{
-	name = "Restroom";
-	id_tag = "boob_bathroom"
+	name = "Cryo"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew)
