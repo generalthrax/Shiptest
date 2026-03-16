@@ -1,0 +1,4 @@
+author: Burning02
+changes:
+  - {rscadd: The Shrikes bridge safe now has a set code on spawn}
+delete-after: true
