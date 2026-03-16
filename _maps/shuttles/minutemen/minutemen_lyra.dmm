@@ -2975,6 +2975,11 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/mapping_helpers/crate_shelve,
+/obj/structure/closet/crate/secure/plasma{
+	name = "uranium crate (DANGER)"
+	},
+/obj/item/stack/sheet/mineral/uranium/ten,
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo)
 "wb" = (
@@ -4890,11 +4895,6 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/mapping_helpers/crate_shelve,
-/obj/structure/closet/crate/secure/plasma{
-	name = "uranium crate (DANGER)"
-	},
-/obj/item/stack/sheet/mineral/uranium/ten,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Kk" = (
