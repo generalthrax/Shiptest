@@ -2975,11 +2975,11 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/mapping_helpers/crate_shelve,
 /obj/structure/closet/crate/secure/plasma{
 	name = "uranium crate (DANGER)"
 	},
 /obj/item/stack/sheet/mineral/uranium/ten,
+/obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo)
 "wb" = (
