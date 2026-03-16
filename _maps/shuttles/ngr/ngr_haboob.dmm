@@ -780,6 +780,7 @@
 	dir = 8
 	},
 /obj/item/radio/headset/syndicate/alt/ngr,
+/obj/item/radio/headset/syndicate/ngr,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/dorm/captain)
 "jS" = (
@@ -3566,6 +3567,7 @@
 	name = "captain's closet"
 	},
 /obj/item/radio/headset/syndicate/alt/captain/ngr,
+/obj/item/radio/headset/syndicate/captain/ngr,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/dorm/captain)
 "Xx" = (
