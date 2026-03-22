@@ -846,7 +846,9 @@ NO_MAG_GUN_HELPER(automatic/assault/hydra/indie)
 	wield_delay = 0.9 SECONDS //ditto
 
 	valid_attachments = SCARBOROUGH_ATTACHMENTS
-	refused_attachments = /obj/item/attachment/silencer, /obj/item/attachment/laser_sight
+	refused_attachments = list(/obj/item/attachment/silencer,
+								/obj/item/attachment/laser_sight
+								)
 	slot_available = SCARBOROUGH_ATTACH_SLOTS
 	slot_offsets = list(
 		ATTACHMENT_SLOT_MUZZLE = list(
