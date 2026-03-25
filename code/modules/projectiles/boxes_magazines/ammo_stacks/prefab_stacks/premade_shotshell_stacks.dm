@@ -123,7 +123,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/incendiary
 
 /obj/item/storage/box/ammo/a12g_dragonsbreath
-	name = "box of dragon's breath shells"
+	name = "box of dragonsbreath shells"
 	desc = "A box of 12-gauge incendiary shells, designed for shooting streams of incendiary pellets. Very hazardous."
 	icon_state = "12gbox-dragon"
 
