@@ -377,4 +377,4 @@
 	cost_max = 700
 	stock_min = 3
 	stock_max = 6
-	availability_prob = 60
+	availability_prob = 80
