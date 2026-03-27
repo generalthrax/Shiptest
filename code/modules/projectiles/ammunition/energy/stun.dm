@@ -37,7 +37,6 @@
 
 /obj/item/ammo_casing/energy/disabler/sharplite/hos
 	e_cost = 1000
-g
 /obj/item/ammo_casing/energy/disabler/scatter	//WS edit, scatter repathing
 	pellets = 3
 	variance = 15
