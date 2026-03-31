@@ -393,8 +393,10 @@
 		icon_state = "[base_icon_state]-on"
 		item_state = "[base_icon_state]-on"
 		armour_penetration = 60
+		slot_flags = null
 	else
 		icon_state = base_icon_state
 		item_state = base_icon_state
 		armour_penetration = -20
+		slot_flags = ITEM_SLOT_BELT
 	. = ..()
