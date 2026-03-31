@@ -323,6 +323,7 @@
 
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/belt.dmi'
 
 	throwforce = 5
 	active_throwforce = 20
