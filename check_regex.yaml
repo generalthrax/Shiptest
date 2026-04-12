@@ -38,7 +38,11 @@ standards:
 
     - exactly:
           [
+<<<<<<< HEAD
               259,
+=======
+              260,
+>>>>>>> ac1991a0ff7a619c4e84126c61e3a9b0a2bbb9a5
               "non-bitwise << uses",
               '(?<!\d)(?<!\d\s)(?<!<)<<(?!=|\s\d|\d|<|\/)',
           ]
