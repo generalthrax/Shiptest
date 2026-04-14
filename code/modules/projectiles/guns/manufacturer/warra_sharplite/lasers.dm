@@ -166,7 +166,7 @@
 	aimed_wield_slowdown = LONG_RIFLE_AIM_SLOWDOWN
 	zoom_amt = DMR_ZOOM
 	wield_delay = 1 SECONDS
-	fire_delay = 0.8 SECONDS
+	fire_delay = 0.5 SECONDS
 
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
