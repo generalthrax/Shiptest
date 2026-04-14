@@ -57,7 +57,7 @@
 /obj/item/ammo_casing/energy/lasergun/sharplite/dmr
 	projectile_type = /obj/projectile/beam/laser/sharplite/dmr
 	e_cost = 1000 // 10 per regular cell  20 per upgraded cell
-	delay = 0.5 SECONDS
+	delay = 0.4 SECONDS
 	select_name = "kill"
 
 /obj/item/ammo_casing/energy/lasergun/sharplite/sniper
