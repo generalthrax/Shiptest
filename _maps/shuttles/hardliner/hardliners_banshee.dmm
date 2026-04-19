@@ -1937,6 +1937,8 @@
 	name = "trooper's locker";
 	req_access = list(1)
 	},
+/obj/item/clothing/under/syndicate/hardliners,
+/obj/item/clothing/suit/armor/hardliners,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "Dt" = (
