@@ -3,7 +3,7 @@
 	"faction": "/datum/faction/syndicate/hardliners",
 	"prefix": "ISV",
 	"manufacturer": "ISF Spacecraft",
-	"map_name": "Y450-H Banshee-class Salvage Clipper",
+	"map_name": "Y450-H Banshee-class Security Clipper",
 	"namelists": [
 		"GORLEX",
 		"NATURAL_AGGRESSIVE",
@@ -11,12 +11,9 @@
 		"WEAPONS"
 	],
 	"map_short_name": "Banshee-class",
-	"description": "A drastic refit of an ICW-era Cybersun yacht into a salvage vessel. While the Banshee retains most of the original exterior, its interior houses an exosuit-based Hardliner salvage team and all the facilities they could need. Though somewhat dated, it functions well as a sleeper ship that could easily be mistaken for any other civilian vessel.",
+	"description": "A drastic refit of an ICW-era Cybersun yacht into a combat-capable vessel. While the Banshee retains most of the original exterior, its interior houses a small hardliner combat team and all the facilities they could need. Though somewhat dated, it functions well as a sleeper ship that could easily be mistaken for any other civilian vessel.",
 	"tags": [
-		"Salvage",
-		"Combat",
-		"Engineering",
-		"Generalist"
+		"Combat"
 	],
 	"map_path": "_maps/shuttles/hardliner/hardliners_banshee.dmm",
 	"tranist_x_offset": -30,
@@ -33,11 +30,11 @@
 			"outfit": "/datum/outfit/job/syndicate/engineer/gorlex",
 			"slots": 1
 		},
-		"Wrecker": {
-			"outfit": "/datum/outfit/job/syndicate/miner/gorlex",
+		"Trooper": {
+			"outfit": "/datum/outfit/job/syndicate/security/gorlex",
 			"slots": 2
 		},
-		"Junior Wrecker": {
+		"Junior Agent": {
 			"outfit": "/datum/outfit/job/syndicate/assistant/gorlex",
 			"slots": 1
 		}
