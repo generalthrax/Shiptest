@@ -514,6 +514,7 @@
 /obj/item/storage/box/flares,
 /obj/item/storage/box/flares,
 /obj/item/pickaxe/drill,
+/obj/item/melee/sledgehammer/gorlex,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "iV" = (
