@@ -395,18 +395,10 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "gT" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/machinery/recharger{
-	pixel_x = 8;
-	pixel_y = 5
-	},
+/obj/machinery/autolathe,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "hL" = (
@@ -538,27 +530,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "iW" = (
-/obj/item/clothing/suit/hazardvest/hardliners,
-/obj/item/clothing/head/hardhat/hardliners,
-/obj/item/clothing/accessory/armband/cargo,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/explorer,
-/obj/item/radio/headset/alt,
-/obj/item/clothing/under/syndicate/hardliners/jumpsuit,
-/obj/item/melee/sledgehammer/gorlex,
-/obj/item/melee/knife/survival,
-/obj/item/storage/toolbox/syndicate,
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "cargo_wall";
-	name = "Wreckers closet";
-	req_access_txt = "48";
-	pixel_x = -28;
-	pixel_y = 3
-	},
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 9
 	},
-/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "jf" = (
@@ -580,13 +554,13 @@
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/central)
 "jt" = (
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 10
-	},
 /obj/machinery/light/directional/east,
+/obj/effect/turf_decal/corner/opaque/syndiered/border,
+/obj/structure/rack,
+/obj/item/gun_maint_kit{
+	pixel_x = -1;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "jE" = (
@@ -852,8 +826,24 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/structure/reagent_dispensers/fueltank,
 /obj/item/radio/intercom/directional/east,
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/stack/sheet/glass/twenty{
+	pixel_x = 8;
+	pixel_y = 7
+	},
+/obj/item/stack/sheet/metal/twenty{
+	pixel_x = 8;
+	pixel_y = 2
+	},
+/obj/item/flashlight/lamp{
+	pixel_x = -9;
+	pixel_y = -5
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "ng" = (
@@ -952,19 +942,11 @@
 /turf/open/floor/engine/hull,
 /area/ship/engineering)
 "oo" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/item/stack/sheet/metal/twenty{
-	pixel_x = -7;
-	pixel_y = 3
-	},
-/obj/item/stack/sheet/glass/twenty{
-	pixel_x = 8;
-	pixel_y = 7
-	},
 /obj/item/radio/intercom/directional/east,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "op" = (
@@ -1051,6 +1033,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/oil,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "pE" = (
@@ -1064,23 +1047,6 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "qi" = (
-/obj/item/clothing/suit/hazardvest/hardliners,
-/obj/item/clothing/head/hardhat/hardliners,
-/obj/item/clothing/accessory/armband/cargo,
-/obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/explorer,
-/obj/item/radio/headset/alt,
-/obj/item/clothing/under/syndicate/hardliners/jumpsuit,
-/obj/item/melee/sledgehammer/gorlex,
-/obj/item/melee/knife/survival,
-/obj/item/storage/toolbox/syndicate,
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "cargo_wall";
-	name = "Wreckers closet";
-	req_access_txt = "48";
-	pixel_x = -28;
-	pixel_y = 3
-	},
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 10
 	},
@@ -1089,7 +1055,6 @@
 	pixel_x = -20;
 	pixel_y = -11
 	},
-/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "ra" = (
@@ -1621,9 +1586,25 @@
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
 "ye" = (
-/obj/machinery/autolathe,
 /obj/effect/turf_decal/techfloor{
 	dir = 9
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/recharger{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/obj/item/gun_maint_kit{
+	pixel_x = 0;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/glass/rag{
+	pixel_x = -8;
+	pixel_y = 11
+	},
+/obj/item/weldingtool/mini{
+	pixel_x = 0;
+	pixel_y = 3
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
@@ -1941,52 +1922,19 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "Df" = (
-/obj/structure/closet/crate/large{
-	name = "APLU construction kit"
+/obj/structure/closet/secure_closet/security{
+	name = "operative's locker"
 	},
-/obj/item/circuitboard/mecha/ripley/peripherals,
-/obj/item/circuitboard/mecha/ripley/main,
-/obj/item/mecha_parts/chassis/ripley,
-/obj/item/mecha_parts/part/ripley_torso,
-/obj/item/mecha_parts/part/ripley_right_leg{
-	pixel_y = -9;
-	pixel_x = 8
-	},
-/obj/item/mecha_parts/part/ripley_left_leg{
-	pixel_y = -9;
-	pixel_x = -8
-	},
-/obj/item/mecha_parts/part/ripley_left_arm{
-	pixel_x = -12
-	},
-/obj/item/mecha_parts/part/ripley_right_arm{
-	pixel_x = 12
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/oil,
-/obj/item/mecha_parts/mecha_equipment/hydraulic_clamp{
-	pixel_x = -8;
-	pixel_y = 16
-	},
-/obj/item/mecha_parts/mecha_equipment/salvage_saw{
-	pixel_x = -13;
-	pixel_y = -11
-	},
-/obj/item/mecha_parts/mecha_equipment/thrusters/ion{
-	pixel_x = 17;
-	pixel_y = 14
-	},
-/obj/item/mecha_parts/mecha_equipment/drill{
-	pixel_x = 18;
-	pixel_y = -14
-	},
-/obj/item/stock_parts/cell/super{
-	pixel_x = 9;
-	pixel_y = 8
-	},
-/turf/open/floor/mech_bay_recharge_floor,
+/obj/effect/turf_decal/corner/opaque/syndiered/border,
+/obj/item/storage/belt/security/webbing/hardliners,
+/obj/item/storage/belt/security/webbing/hardliners/alt,
+/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
+/obj/item/melee/knife/survival,
+/obj/item/clothing/under/syndicate/hardliners/jumpsuit,
+/obj/item/radio/headset/alt,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/head/helmet/hardliners,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "Dt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2501,14 +2449,24 @@
 /area/ship/crew/canteen)
 "Kx" = (
 /obj/structure/guncloset,
-/obj/item/gun/ballistic/automatic/pistol/asp/no_mag,
-/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/asp/no_mag{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag{
+	pixel_x = 1;
+	pixel_y = -8
+	},
 /obj/effect/turf_decal/industrial/warning/cee{
 	color = "#FFFFFF";
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/thinplating/dark/end{
 	dir = 4
+	},
+/obj/item/gun/ballistic/automatic/smg/sidewinder/no_mag{
+	pixel_x = -3;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -2810,12 +2768,6 @@
 /obj/item/ammo_box/magazine/m57_39_asp,
 /obj/item/ammo_box/magazine/m12g_bulldog,
 /obj/item/ammo_box/magazine/m12g_bulldog,
-/obj/item/clothing/suit/armor/hardliners,
-/obj/item/clothing/suit/armor/hardliners,
-/obj/item/storage/belt/security/webbing/hardliners,
-/obj/item/storage/belt/security/webbing/hardliners,
-/obj/item/clothing/head/helmet/hardliners,
-/obj/item/clothing/head/helmet/hardliners,
 /obj/effect/turf_decal/industrial/warning/cee{
 	color = "#FFFFFF";
 	dir = 8
@@ -2833,8 +2785,9 @@
 	pixel_y = -5
 	},
 /obj/item/gun_maint_kit,
-/obj/item/storage/belt/security/webbing/hardliners/alt,
-/obj/item/storage/belt/security/webbing/hardliners/alt,
+/obj/item/ammo_box/magazine/m57_39_sidewinder,
+/obj/item/ammo_box/magazine/m57_39_sidewinder,
+/obj/item/ammo_box/magazine/m57_39_sidewinder,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Qe" = (
@@ -3013,12 +2966,20 @@
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
 "St" = (
-/obj/machinery/computer/mech_bay_power_console{
-	dir = 1
+/obj/structure/closet/secure_closet/security{
+	name = "operative's locker"
 	},
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 6
-	},
+/obj/effect/turf_decal/corner/opaque/syndiered/border,
+/obj/item/clothing/glasses/hud/security/sunglasses/hardliners,
+/obj/item/melee/knife/survival,
+/obj/item/clothing/under/syndicate/hardliners/jumpsuit,
+/obj/item/radio/headset/alt,
+/obj/item/clothing/under/syndicate/hardliners,
+/obj/item/clothing/suit/armor/hardliners,
+/obj/item/storage/belt/security/webbing/hardliners,
+/obj/item/storage/belt/security/webbing/hardliners/alt,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/head/helmet/hardliners,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "SB" = (
