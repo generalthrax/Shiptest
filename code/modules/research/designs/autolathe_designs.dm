@@ -821,7 +821,7 @@
 	build_path = /obj/item/restraints/handcuffs
 	category = list("initial", "Security")
 
-/datum/designs/doorseal
+/datum/design/doorseal
 	name = "Pneumatic Seal"
 	id = "doorseal"
 	build_type = AUTOLATHE
