@@ -301,7 +301,7 @@
 	new /obj/item/hypospray/mkii/mkiii(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/silfrine(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/ysiltane(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/pancraizne(src)
+	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/pancrazine(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salbutamol(src)
 
 /obj/item/storage/box/hypospray/mkiii/cargo
