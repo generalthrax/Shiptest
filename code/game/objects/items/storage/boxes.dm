@@ -311,7 +311,7 @@
 	new /obj/item/hypospray/mkii/mkiii(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/hadramide(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/quadratane(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/gjalrazine(src)
+	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/pancrazine(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salbutamol(src)
 
 /obj/item/storage/box/medigels
