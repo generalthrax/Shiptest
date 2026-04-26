@@ -426,7 +426,7 @@
 	category = list("initial", "Dinnerware")
 
 /datum/design/bigplate
-	name = "Plate (Buffet)
+	name = "Plate (Buffet)"
 	id = "bigplate"
 	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = 4000)
