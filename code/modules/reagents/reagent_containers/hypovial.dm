@@ -278,6 +278,21 @@
 	icon_state = "hypoviallarge-t"
 	comes_with = list(/datum/reagent/medicine/charcoal = 120)
 
+/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/cureall
+	name = "large hypovial (cureall)"
+	icon_state = "hypoviallarge"
+	comes_with = list(/datum/reagent/medicine/cureall = 120)
+
+/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salglu
+	name = "large green hypovial (salglu)"
+	icon_state = "hypoviallarge-a"
+	comes_with = list(/datum/reagent/medicine/salglu_solution = 120)
+
+/obj/item/reagent_containers/glass/bottle/vial/large/preloaded/morphine
+	name = "large hypovial (morphine)"
+	icon_state = "hypoviallarge-t"
+	comes_with = list(/datum/reagent/medicine/morphine = 120)
+
 /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/hadramide
 	name = "large hypovial (hadra-mide)"
 	icon_state = "hypoviallarge-b"
