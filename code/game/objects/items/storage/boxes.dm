@@ -300,8 +300,8 @@
 /obj/item/storage/box/hypospray/mkiii/PopulateContents()
 	new /obj/item/hypospray/mkii/mkiii(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/silfrine(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/gjalrazine(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/ysiltane(src)
+	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/pancraizne(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salbutamol(src)
 
 /obj/item/storage/box/hypospray/mkiii/cargo
@@ -309,9 +309,9 @@
 
 /obj/item/storage/box/hypospray/mkiii/PopulateContents()
 	new /obj/item/hypospray/mkii/mkiii(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/cureall(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salglu(src)
-	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/morphine(src)
+	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/indomix(src)
+	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/quadratane(src)
+	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/gjalrazine(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/salbutamol(src)
 
 /obj/item/storage/box/medigels
