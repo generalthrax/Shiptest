@@ -171,7 +171,7 @@
 /datum/supply_pack/food/ingredients_basic/seaweed
 	name = "Seaweed Sheet Crate"
 	desc = "Crate containing five seaweed sheets."
-	cost = 25 //ingredient only p much
+	cost = 50 //ingredient only p much
 	contains = list(/obj/item/food/grown/seaweed/sheet,
 					/obj/item/food/grown/seaweed/sheet,
 					/obj/item/food/grown/seaweed/sheet,
