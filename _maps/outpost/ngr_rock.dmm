@@ -410,9 +410,7 @@
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/bar)
 "aO" = (
-/obj/machinery/camera{
-	dir = 5
-	},
+/obj/machinery/camera/directional/west,
 /obj/effect/turf_decal/siding/wood{
 	color = "#412e25";
 	dir = 4
@@ -465,9 +463,7 @@
 	color = "#412e25";
 	dir = 8
 	},
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/bar)
 "aU" = (
@@ -654,9 +650,7 @@
 	layer = 2.030;
 	dir = 10
 	},
-/obj/machinery/camera{
-	dir = 5
-	},
+/obj/machinery/camera/directional/west,
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 10
 	},
@@ -1435,9 +1429,8 @@
 	name = "hydrogen canister";
 	desc = "Hydrogen. Used in thruster fuel."
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 6
+/obj/machinery/camera/directional/north{
+	network = list("1000eye")
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/tech/grid,
@@ -1680,9 +1673,8 @@
 	layer = 2.030;
 	dir = 4
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 4
+/obj/machinery/camera/directional/west{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/hallway/aft)
@@ -1697,10 +1689,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/obj/machinery/mineral/processing_unit_console{
-	pixel_y = 20;
-	machinedir = 1;
-	pixel_x = 32
+/obj/machinery/computer/processing_unit_console/directional/north{
+	machinedir = 1
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -3161,9 +3151,8 @@
 "gT" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /obj/machinery/light/directional/north,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 4
+/obj/machinery/camera/directional/west{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/medical)
@@ -3375,9 +3364,8 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 1
+/obj/machinery/camera/directional/south{
+	network = list("1000eye")
 	},
 /obj/item/shovel/spade{
 	pixel_y = -9;
@@ -3562,9 +3550,7 @@
 /obj/effect/turf_decal/trimline/opaque/bar/line{
 	dir = 1
 	},
-/obj/machinery/camera{
-	dir = 8
-	},
+/obj/machinery/camera/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/checkpoint)
@@ -3975,17 +3961,14 @@
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 1
 	},
-/obj/machinery/camera{
-	dir = 10
-	},
+/obj/machinery/camera/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "iP" = (
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 6
+/obj/machinery/camera/directional/north{
+	network = list("1000eye")
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/hallway/aft)
@@ -4053,7 +4036,7 @@
 "iY" = (
 /obj/effect/turf_decal/corner/opaque/beige/mono,
 /obj/effect/turf_decal/corner/opaque/beige/mono,
-/obj/machinery/camera{
+/obj/machinery/camera/directional/north{
 	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/dark,
@@ -4214,9 +4197,7 @@
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 6
 	},
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "js" = (
@@ -4905,9 +4886,8 @@
 	dir = 2
 	},
 /obj/machinery/light/directional/north,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 4
+/obj/machinery/camera/directional/west{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/medical)
@@ -4958,7 +4938,7 @@
 /obj/effect/turf_decal/trimline/opaque/bar/line{
 	dir = 1
 	},
-/obj/machinery/camera,
+/obj/machinery/camera/directional/north,
 /obj/effect/turf_decal/borderfloorblack{
 	layer = 2.030
 	},
@@ -5133,7 +5113,7 @@
 	dir = 9
 	},
 /obj/structure/filingcabinet/double,
-/obj/machinery/camera{
+/obj/machinery/camera/directional/north{
 	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/dark,
@@ -6299,9 +6279,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/camera{
-	dir = 5
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/checkpoint)
 "nu" = (
@@ -6365,9 +6343,7 @@
 /obj/structure/sign/poster/contraband/peacemaker{
 	pixel_y = -31
 	},
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /obj/effect/turf_decal/siding/wood{
 	color = "#412e25";
 	dir = 10
@@ -6562,9 +6538,8 @@
 /turf/open/floor/concrete/slab_1,
 /area/outpost/hallway/aft)
 "nT" = (
-/obj/machinery/computer/electrolyzer_console{
-	density = 0;
-	pixel_y = 25
+/obj/machinery/computer/electrolyzer_console/directional/north{
+	density = 0
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
@@ -6583,7 +6558,7 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/machinery/camera,
+/obj/machinery/camera/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "nX" = (
@@ -6779,7 +6754,7 @@
 /obj/item/clothing/gloves/nitrile/evil,
 /obj/item/clothing/gloves/nitrile/evil,
 /obj/item/clothing/gloves/nitrile/evil,
-/obj/machinery/camera{
+/obj/machinery/camera/directional/north{
 	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/patterned/brushed,
@@ -7159,9 +7134,8 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 8
+/obj/machinery/camera/directional/east{
+	network = list("1000eye")
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -7330,9 +7304,8 @@
 /obj/effect/turf_decal/borderfloorblack{
 	layer = 2.030
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 6
+/obj/machinery/camera/directional/north{
+	network = list("1000eye")
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech/ngr_outpost,
@@ -7827,9 +7800,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/machinery/camera{
-	dir = 10
-	},
+/obj/machinery/camera/directional/south,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/maintenance/central)
 "qL" = (
@@ -8822,9 +8793,8 @@
 /area/outpost/crew/library)
 "sU" = (
 /obj/effect/turf_decal/corner/opaque/beige/mono,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 8
+/obj/machinery/camera/directional/east{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/operations)
@@ -8918,9 +8888,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 5
 	},
-/obj/machinery/camera{
-	dir = 8
-	},
+/obj/machinery/camera/directional/east,
 /obj/machinery/firealarm/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
@@ -9004,9 +8972,8 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 8
+/obj/machinery/camera/directional/east{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dorm)
@@ -9691,9 +9658,8 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/closet/emcloset,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 6
+/obj/machinery/camera/directional/north{
+	network = list("1000eye")
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating,
@@ -11647,9 +11613,7 @@
 	dir = 1
 	},
 /obj/structure/cable/yellow,
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/plasteel,
 /area/outpost/crew/canteen)
@@ -11853,9 +11817,7 @@
 	color = "#412e25";
 	dir = 8
 	},
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/library)
@@ -11900,7 +11862,7 @@
 	pixel_x = -7;
 	pixel_y = 22
 	},
-/obj/machinery/camera,
+/obj/machinery/camera/directional/north,
 /turf/open/floor/pod/dark,
 /area/outpost/security/armory)
 "zy" = (
@@ -12018,9 +11980,7 @@
 	pixel_y = 5
 	},
 /obj/machinery/portable_atmospherics/pump,
-/obj/machinery/camera{
-	dir = 5
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/pod/dark,
 /area/outpost/engineering)
 "zK" = (
@@ -13590,7 +13550,7 @@
 	dir = 1;
 	layer = 2.04
 	},
-/obj/machinery/camera,
+/obj/machinery/camera/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "Dn" = (
@@ -13843,9 +13803,8 @@
 /obj/effect/turf_decal/trimline/opaque/bar/line{
 	dir = 5
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 8
+/obj/machinery/camera/directional/east{
+	network = list("1000eye")
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/recharger{
@@ -14121,9 +14080,8 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/office)
 "Ev" = (
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 9
+/obj/machinery/camera/directional/east{
+	network = list("1000eye")
 	},
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 1
@@ -14911,9 +14869,7 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /obj/effect/turf_decal/trimline/opaque/bar/line{
 	dir = 10
 	},
@@ -15171,9 +15127,7 @@
 /obj/item/clothing/head/helmet/space/syndicate/ngr,
 /obj/item/clothing/suit/space/syndicate/ngr,
 /obj/machinery/light/directional/south,
-/obj/machinery/camera{
-	dir = 9
-	},
+/obj/machinery/camera/directional/east,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/security/armory)
 "GJ" = (
@@ -15822,9 +15776,8 @@
 "HZ" = (
 /obj/machinery/smartfridge/bloodbank/preloaded,
 /obj/machinery/light/directional/north,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 4
+/obj/machinery/camera/directional/west{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/medical)
@@ -15832,9 +15785,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/machinery/camera{
-	dir = 9
-	},
+/obj/machinery/camera/directional/east,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/security/armory)
 "Ib" = (
@@ -16059,9 +16010,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/checkpoint)
 "IE" = (
@@ -16660,9 +16609,8 @@
 	dir = 1
 	},
 /obj/machinery/light/floor,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 10
+/obj/machinery/camera/directional/south{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
@@ -17364,9 +17312,7 @@
 /obj/effect/turf_decal/techfloor{
 	layer = 2.04
 	},
-/obj/machinery/camera{
-	dir = 5
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/plating,
 /area/outpost/engineering/atmospherics)
 "Lt" = (
@@ -17591,9 +17537,7 @@
 /obj/effect/turf_decal/corner/opaque/black/half{
 	dir = 4
 	},
-/obj/machinery/camera{
-	dir = 8
-	},
+/obj/machinery/camera/directional/east,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
 	},
@@ -18234,9 +18178,8 @@
 /obj/effect/turf_decal/borderfloorblack{
 	layer = 2.030
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 6
+/obj/machinery/camera/directional/north{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/tech/ngr_outpost,
 /area/outpost/hallway/central)
@@ -18281,9 +18224,7 @@
 /turf/open/water/ngr_outpost,
 /area/outpost/exterior/rock)
 "NE" = (
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /obj/structure/railing{
 	dir = 6;
 	layer = 4.1
@@ -19001,9 +18942,8 @@
 	layer = 2.030;
 	dir = 4
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 4
+/obj/machinery/camera/directional/west{
+	network = list("1000eye")
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/hallway/fore)
@@ -20929,9 +20869,8 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 6
+/obj/machinery/camera/directional/north{
+	network = list("1000eye")
 	},
 /obj/structure/chair/bench/red,
 /obj/machinery/light/directional/north,
@@ -20983,9 +20922,7 @@
 /obj/effect/turf_decal/corner/opaque/beige/half{
 	dir = 8
 	},
-/obj/machinery/camera{
-	dir = 8
-	},
+/obj/machinery/camera/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
@@ -21410,9 +21347,7 @@
 /obj/effect/turf_decal/trimline/opaque/bar/line{
 	dir = 1
 	},
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /obj/item/instrument/harmonica,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/checkpoint)
@@ -21982,9 +21917,7 @@
 	layer = 2.030;
 	dir = 8
 	},
-/obj/machinery/camera{
-	dir = 8
-	},
+/obj/machinery/camera/directional/east,
 /turf/open/floor/plasteel/tech/ngr_outpost,
 /area/outpost/hallway/aft)
 "VR" = (
@@ -22107,9 +22040,7 @@
 	dir = 5
 	},
 /obj/structure/rack,
-/obj/machinery/camera{
-	dir = 8
-	},
+/obj/machinery/camera/directional/east,
 /obj/item/binoculars,
 /turf/open/floor/plasteel,
 /area/outpost/vacant_rooms)
@@ -22653,9 +22584,7 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/ngr_eng_quarters)
 "Xs" = (
-/obj/machinery/camera{
-	dir = 8
-	},
+/obj/machinery/camera/directional/east,
 /obj/effect/turf_decal/trimline/opaque/bar/filled/corner,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
@@ -22838,9 +22767,8 @@
 	dir = 4
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 8
+/obj/machinery/camera/directional/east{
+	network = list("1000eye")
 	},
 /obj/effect/turf_decal/trimline/opaque/bar/line{
 	dir = 8
@@ -23084,9 +23012,8 @@
 /obj/effect/turf_decal/industrial/traffic,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/closet/emcloset,
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 10
+/obj/machinery/camera/directional/south{
+	network = list("1000eye")
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating,
@@ -23217,9 +23144,8 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 8
 	},
-/obj/machinery/camera{
-	network = list("1000eye");
-	dir = 6
+/obj/machinery/camera/directional/north{
+	network = list("1000eye")
 	},
 /obj/structure/chair/bench/grey/directional/west,
 /obj/machinery/newscaster/directional/north,
@@ -23565,9 +23491,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
-/obj/machinery/camera{
-	dir = 9
-	},
+/obj/machinery/camera/directional/east,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "Zr" = (
@@ -23692,9 +23616,7 @@
 /obj/effect/turf_decal/trimline/opaque/bar/line{
 	dir = 1
 	},
-/obj/machinery/camera{
-	dir = 4
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/checkpoint)
 "ZE" = (
