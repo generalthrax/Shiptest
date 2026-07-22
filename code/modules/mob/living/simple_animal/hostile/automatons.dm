@@ -166,10 +166,19 @@
 	is_flying_animal = TRUE
 	ranged = FALSE
 	faction = list(FACTION_NEUTRAL)
+	var/obj/item/default_storage = /obj/item/storage/backpack/satchel
 
-/mob/living/simple_animal/hostile/automated/agrav/Initialize(mob/living/source)
+/mob/living/simple_animal/hostile/automated/agrav/Initialize()
 	. = ..()
-	src.mob_light(2, 0.4, glow_color)
+
+	if(default_storage)
+		var/obj/item/I = new default_storage(src)
+		equip_to_slot_or_del(I, ITEM_SLOT_DEX_STORAGE)
+
+	ADD_TRAIT(src, TRAIT_HOLDABLE, INNATE_TRAIT)
+
+	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
+		diag_hud.add_to_hud(src)
 
 /mob/living/simple_animal/hostile/automated/agrav/cybersun
 	name = "'Verefasa' Combat Munition"
@@ -189,6 +198,9 @@
 	on_aggro_say = list("Unregistered entity detected. Removing.", "You're not supposed to be here.", "Code 5-11-7. This area is under claim. Please leave immediately.")
 	aggro_say_chance = 70
 	faction = list(FACTION_HOSTILE)
+
+/mob/living/simple_animal/hostile/automated/agrav/cybersun/Initialize()
+	. = ..()
 
 //bipedal
 
