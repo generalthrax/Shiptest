@@ -283,8 +283,8 @@
 /turf/open/floor/plating/asteroid/rockplanet,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "iu" = (
-/turf/closed/wall/mineral/wood,
-/area/overmap_encounter/planetoid/rockplanet/explored)
+/turf/open/water/rockplanet,
+/area/ruin/rockplanet/oasis_stash/hut)
 "iD" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -485,7 +485,6 @@
 	},
 /area/overmap_encounter/planetoid/cave/explored)
 "ps" = (
-/obj/structure/barricade/sandbags,
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/ruin/rockplanet/oasis_stash/hut)
 "pG" = (
@@ -664,7 +663,6 @@
 /turf/open/floor/plating/asteroid/rockplanet/wet,
 /area/overmap_encounter/planetoid/cave/explored)
 "wB" = (
-/obj/structure/barricade/sandbags,
 /turf/open/floor/plating/asteroid/dirt/grass/rockplanet,
 /area/ruin/rockplanet/oasis_stash/hut)
 "wL" = (
@@ -873,22 +871,6 @@
 	icon_state = "wood-broken7"
 	},
 /area/overmap_encounter/planetoid/cave/explored)
-"Ho" = (
-/obj/item/reagent_containers/glass/bucket/wooden{
-	pixel_x = -10;
-	pixel_y = -11
-	},
-/obj/item/storage/fancy/cigarettes/cigpack_carp{
-	pixel_x = -9;
-	pixel_y = 11
-	},
-/mob/living/basic/human/frontier/ranged/trooper/rifle/internals/neutered{
-	vision_range = 20;
-	environment_smash = 0;
-	holds_post = 1
-	},
-/turf/open/floor/plating/asteroid/dirt/grass/rockplanet,
-/area/ruin/rockplanet/oasis_stash/hut)
 "Hx" = (
 /obj/structure/flora/ash/garden/arid,
 /obj/item/restraints/legcuffs/beartrap{
@@ -901,20 +883,7 @@
 /turf/open/floor/plating/asteroid/rockplanet/wet,
 /area/overmap_encounter/planetoid/cave/explored)
 "Ih" = (
-/obj/item/reagent_containers/glass/bucket/wooden{
-	pixel_x = -10;
-	pixel_y = -11
-	},
-/obj/item/storage/fancy/cigarettes/cigpack_carp{
-	pixel_x = -9;
-	pixel_y = 11
-	},
-/mob/living/basic/human/frontier/ranged/trooper/rifle/internals/neutered{
-	vision_range = 20;
-	environment_smash = 0;
-	holds_post = 1
-	},
-/turf/open/floor/plating/asteroid/rockplanet/lit,
+/turf/open/floor/plating/asteroid/rockplanet/wet/lit,
 /area/ruin/rockplanet/oasis_stash/hut)
 "Im" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -2070,9 +2039,9 @@ kO
 kO
 kO
 kO
-vm
-vm
-vm
+qU
+qU
+qU
 qU
 qU
 qU
@@ -2136,10 +2105,10 @@ kO
 kO
 kO
 kO
-Wx
-wL
-ps
-ps
+zO
+Ih
+Ih
+Ih
 qU
 qU
 qU
@@ -2204,9 +2173,9 @@ kO
 kO
 kO
 qU
-wL
 Ih
-ps
+Ih
+Ih
 qU
 qU
 qU
@@ -2270,10 +2239,10 @@ kO
 kO
 kO
 qU
-iu
-wL
-ps
-ps
+qU
+Ih
+Ih
+Ih
 qU
 qU
 qU
@@ -2338,9 +2307,9 @@ kO
 qU
 qU
 qU
-vm
-vm
-vm
+qU
+qU
+qU
 qU
 qU
 qU
@@ -2407,7 +2376,7 @@ qU
 qU
 qU
 qU
-vm
+qU
 qU
 qU
 qU
@@ -3279,8 +3248,8 @@ lB
 vm
 vm
 vm
-iu
-wL
+vm
+ps
 ps
 ps
 vm
@@ -3347,8 +3316,8 @@ vm
 Jc
 vm
 vm
-wL
-Ih
+ps
+ps
 ps
 vm
 vm
@@ -3413,8 +3382,8 @@ vm
 vm
 vm
 vm
-iu
-wL
+vm
+ps
 ps
 ps
 vm
@@ -4081,8 +4050,8 @@ hL
 Kv
 Xb
 Xb
-qU
-qU
+Xb
+Xb
 hL
 Xb
 qU
@@ -4148,8 +4117,8 @@ Xb
 Xb
 Kv
 Xb
-qU
-qU
+Xb
+Xb
 Xv
 Xv
 qU
@@ -4216,8 +4185,8 @@ kR
 rX
 Qg
 Xb
-qU
-qU
+Xb
+Xb
 Xv
 Xv
 qU
@@ -4282,8 +4251,8 @@ Xb
 kR
 kR
 Tt
-iu
-wL
+Xb
+wB
 wB
 wB
 qU
@@ -4350,8 +4319,8 @@ sQ
 kR
 Tt
 Xb
-wL
-Ho
+wB
+wB
 wB
 Xb
 Xb
@@ -4416,8 +4385,8 @@ Xb
 Xb
 rX
 jA
-iu
-wL
+Xb
+wB
 wB
 wB
 Xb
@@ -5223,8 +5192,8 @@ TC
 TC
 aw
 Xb
-iu
-wL
+Xb
+wB
 wB
 wB
 qU
@@ -5291,8 +5260,8 @@ eN
 TC
 TC
 Qj
-wL
-Ho
+wB
+wB
 wB
 qU
 vm
@@ -5357,8 +5326,8 @@ TC
 WR
 eN
 TC
+TC
 iu
-wL
 wB
 wB
 qU
